@@ -1,0 +1,71 @@
+<div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+                  <div class="e-card">
+                    <font size="4" *ngIf="hideCreateButton">Create New Category</font>
+                    <font size="4" *ngIf="!hideCreateButton">Edit Category</font>
+                    <p></p>
+                    <ejs-textbox
+                      formControlName="title"
+                      placeholder="Catagory Title"
+                      floatLabelType="Auto"
+                    >
+                    </ejs-textbox>
+                    <div *ngIf="gettitle.errors">
+                      <p
+                        *ngIf="formSubmitted && gettitle.hasError('required')"
+                        style="color:rgba(255, 0, 0, 0.671)"
+                      >
+                       <font size="2"> title is required </font>
+                      </p>
+                    </div>
+                    <ejs-textbox
+                      [multiline]="true"
+                      formControlName="desc"
+                      placeholder="Catagory Description"
+                      floatLabelType="Auto"
+                    >
+                    </ejs-textbox>
+                    <p></p>
+                     <ejs-dropdownlist
+                      formControlName="category"
+                      id="ddlelement"
+                      [dataSource]="categories"
+                      placeholder="Select Category type">
+                  </ejs-dropdownlist>
+                  <p></p>
+                    <ejs-checkbox
+                       label="Make This Category Disabled (Not Viewed by Others)"
+                       formControlName="status">
+                    </ejs-checkbox>
+                    <p></p>
+                    <ejs-checkbox
+                       label="Show Events"
+                       formControlName="show_events">
+                    </ejs-checkbox>
+                    <br />
+                    <div>
+                      <button
+                        ejs-button
+                        cssClass="e-success"
+                        *ngIf="hideCreateButton"
+                      >
+                        Create
+                      </button>
+                      <button
+                        ejs-button
+                        cssClass="e-success"
+                        *ngIf="hideSaveChangesButton"
+                      >
+                        Save Changes
+                      </button>
+                    </div>
+                  </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

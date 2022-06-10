@@ -1,0 +1,65 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="e-card">
+        <ejs-grid
+          #grid
+          gridLines="Both"
+          [dataSource]="gridData"
+          [allowPaging]="true"
+          [pageSettings]="pageSettings"
+          [editSettings]="editSettings"
+          [allowSorting]="true"
+          [allowFiltering]="true"
+          [allowReordering]="true"
+          [allowResizing]="true"
+          [toolbar]="toolbar"
+          [searchSettings]="searchOptions"
+          [allowTextWrap]="true"
+          [textWrapSettings]="wrapSettings"
+          (toolbarClick)="addNew($event)"
+          [height]="600"
+        >
+          <e-columns>
+            <e-column
+              *ngFor="let column of columens"
+              [field]="column.field"
+              [headerText]="column.headerText"
+              [width]="column.width"
+              [textAlign]="column.textAlign"
+              [visible]="true"
+              clipMode="EllipsisWithTooltip"
+              displayAsCheckBox="true"
+            >
+            </e-column>
+
+            <e-column
+              headerText="Operations"
+              width="50"
+              [commands]="commands"
+              *ngIf="commands.length > 0"
+              textAlign="center"
+              [visible]="allowOperation"
+            ></e-column>
+          </e-columns>
+        </ejs-grid>
+
+        <div #container class="root-container"></div>
+        <ejs-dialog
+          id="dialog"
+          #ejDialog
+          header="Confirmation"
+          [target]="targetElement"
+          width="250px"
+          [buttons]="buttons"
+          [visible]="false"
+          allowDragging="true"
+          [closeOnEscape]="true"
+          [animationSettings]="animationSettings"
+          [showCloseIcon]="true"
+        >
+        </ejs-dialog>
+      </div>
+    </div>
+  </div>
+</div>

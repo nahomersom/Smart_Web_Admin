@@ -1,0 +1,1296 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "fullname": "Abebe Kebede",
+      "email": "abekebe@example.com",
+      "password": "abc12345"
+    },
+    {
+      "id": 2,
+      "fullname": "surafel habte",
+      "email": "sura@gmail.com",
+      "password": "abcd1234"
+    }
+  ],
+  "admin": [
+    {
+      "id": 1,
+      "fullname": "Surafel Habte",
+      "role": "Admin",
+      "email": "admin@gmail.com",
+      "password": "abcd1234"
+    }
+  ],
+  "verifay": [
+    {
+      "id": 1,
+      "code": 123
+    }
+  ],
+  "category": [
+    {
+      "id": 2,
+      "title": "News",
+      "desc": "This is News",
+      "language": "English",
+      "defaultCatagoryId": 0,
+      "status": false
+    },
+    {
+      "id": 4,
+      "title": "AboutUs",
+      "desc": "This is about the company category",
+      "language": "English",
+      "defaultCatagoryId": 0,
+      "status": false,
+      "other": [
+        {
+          "Localtitle": "Selegn",
+          "Localdesc": "Yeha Selegn Category new",
+          "Locallanguage": "Amharic",
+          "Localstatus": true
+        },
+        {
+          "Localtitle": "Akam",
+          "Localdesc": "this is akam",
+          "Locallanguage": "Oromifa",
+          "Localstatus": true
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "LocalNews",
+      "desc": "local News",
+      "language": "English",
+      "defaultCatagoryId": 0,
+      "status": false
+    },
+    {
+      "id": 7,
+      "title": "Media",
+      "desc": "media category",
+      "language": "English",
+      "defaultCatagoryId": 0,
+      "status": true,
+      "other": []
+    },
+    {
+      "id": 8,
+      "title": "Forum",
+      "desc": "Discussion Board",
+      "language": "English",
+      "defaultCatagoryId": 0,
+      "status": false,
+      "other": []
+    }
+  ],
+  "menu": [
+    {
+      "id": 1,
+      "title": "About Us",
+      "desc": "This is Our First  Menu ",
+      "categoryId": "AboutUs",
+      "language": "English",
+      "defaultmenuId": 0,
+      "status": true,
+      "other": []
+    },
+    {
+      "id": 2,
+      "title": "News",
+      "desc": "This is Our Second Menu",
+      "categoryId": "News",
+      "language": "English",
+      "defaultmenuId": 0,
+      "status": true,
+      "other": [
+        {
+          "Localtitle": "Manu torba",
+          "Localdesc": "This is the torba manu",
+          "Locallanguage": "Oromifa",
+          "Localstatus": true
+        },
+        {
+          "Localtitle": "Mawecha 3",
+          "Localdesc": "Yehe Sosetegn Mawech new",
+          "Locallanguage": "Amharic",
+          "Localstatus": true
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Local News",
+      "desc": "local News",
+      "categoryId": "LocalNews",
+      "language": "English",
+      "defaultmenuId": 0,
+      "status": true,
+      "other": []
+    },
+    {
+      "id": 6,
+      "title": "Forum",
+      "desc": "Forum Board",
+      "categoryId": "Forum",
+      "language": "English",
+      "defaultmenuId": 0,
+      "status": true,
+      "other": []
+    }
+  ],
+  "article": [
+    {
+      "id": 1,
+      "title": "New System Launched Soon",
+      "body": "<p style=\"text-align: center;\"><span><meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\"><span style=\"font-family: &quot;Times New Roman&quot;, Times, serif;\"><strong><span style=\"text-decoration: underline;\">Dear James,</span></strong></span><span style=\"background-color: rgb(51, 255, 255);\"><strong><span style=\"text-decoration: underline;\"></span></strong></span></span></p><p style=\"text-align: center;\">Thank <span style=\"color: rgb(112, 173, 71); text-decoration: inherit;\"></span><span style=\"color: rgb(112, 173, 71); text-decoration: inherit;\"><strong>you for visiting us and making your first purchase! </strong></span><span style=\"color: rgb(255, 217, 102); text-decoration: inherit;\"><strong>We’re glad that you found what you were looking for. It is our goal that you are always happy with what you bought from us, </strong></span><span style=\"color: rgb(179, 0, 0); text-decoration: inherit;\"><strong>so please let us know if your buying experience was anything short of excellent. We look forward to seeing you again. Have a great day!</strong></span></p><p style=\"text-align: left;\"><span><meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\"><span>Best Regards</span></span></p><p style=\"text-align: left;\"><span>Your friends at (your business)</span></p><p style=\"box-sizing: border-box; margin: 0px; color: rgb(94, 94, 94); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 300; letter-spacing: normal; orphans: 2; text-align: right; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(247, 247, 247); text-decoration-style: initial; text-decoration-color: initial;\"></p><div style=\"text-align: right;\"></div><p></p><p></p><p></p><p></p><p></p><table class=\"table table-bordered table-hover\"><thead class=\"thead-dark\"><tr><th scope=\"col\" class=\"\">#</th><th scope=\"col\">First</th><th scope=\"col\">Last</th><th scope=\"col\">Handle</th></tr></thead><tbody><tr><th scope=\"row\" class=\"\">1</th><td>Mark</td><td>Otto</td><td>@mdo</td></tr><tr><th scope=\"row\" class=\"\">2</th><td>Jacob</td><td>Thornton</td><td>@fat</td></tr><tr><th scope=\"row\">3</th><td>Larry</td><td>the Bird</td><td>@twitter</td></tr></tbody></table>",
+      "categoryId": "News",
+      "language": "English",
+      "defaultArticleId": 0,
+      "status": false,
+      "allowComment": false,
+      "featured": true,
+      "thumbnail": "https://www.gstatic.com/webp/gallery/4.jpg",
+      "other": []
+    },
+    {
+      "id": 2,
+      "title": "Investement Ownership",
+      "body": "<p><span><meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\"><span style=\"background-color: rgb(0, 0, 153);\"><strong>Dear James,</strong></span></span></p><p style=\"text-align: left;\">﻿﻿<span style=\"background-color: rgb(0, 0, 153);\">Thank you for visiting us and making your first purchase! We’re glad that you found what you were looking for. It is our goal that you are always happy with what you bought from us, so please let us know if your buying experience was anything short of excellent. We look forward to seeing you again. Have a great day!</span></p><p style=\"box-sizing: border-box; margin: 0px; color: rgb(94, 94, 94); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 300; letter-spacing: normal; orphans: 2; text-align: right; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(247, 247, 247); text-decoration-style: initial; text-decoration-color: initial;\">Best Regards,<br style=\"box-sizing: border-box;\">Your friends at (your business)</p><p style=\"box-sizing: border-box; margin: 0px; color: rgb(94, 94, 94); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 300; letter-spacing: normal; orphans: 2; text-align: right; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(247, 247, 247); text-decoration-style: initial; text-decoration-color: initial;\"></p><div style=\"text-align: right;\"></div><div><br></div>",
+      "categoryId": "News",
+      "language": "English",
+      "defaultArticleId": 0,
+      "status": false,
+      "featured": true,
+      "thumbnail": "https://www.gstatic.com/webp/gallery/3.jpg",
+      "other": []
+    },
+    {
+      "id": 3,
+      "title": "Airplan Crash the Company",
+      "body": "<p><span><meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\"><span style=\"color: rgb(0, 0, 0); text-decoration: inherit;\"><strong>Dear James,</strong></span></span></p><p style=\"text-align: left;\"><span style=\"color: rgb(0, 0, 0); text-decoration: inherit;\">know if your buying experience was anything short of excellent. We look forward to seeing you again. Have a great day!</span><span style=\"color: rgb(0, 0, 0); text-decoration: inherit;\">Thank you for visiting us and making your first purchase! We’re glad that you found what you were looking for. It is our goal that you are always happy with what you bought from us, so please let us </span></p><p style=\"box-sizing: border-box; margin: 0px; color: rgb(94, 94, 94); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 300; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(247, 247, 247); text-decoration-style: initial; text-decoration-color: initial;\"><span style=\"color: rgb(0, 0, 0); text-decoration: inherit;\"></span>Best Regards,</p><p style=\"box-sizing: border-box; margin: 0px; color: rgb(94, 94, 94); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 300; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(247, 247, 247); text-decoration-style: initial; text-decoration-color: initial;\">Your friends at (your business)</p><p style=\"box-sizing: border-box; margin: 0px; color: rgb(94, 94, 94); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 300; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(247, 247, 247); text-decoration-style: initial; text-decoration-color: initial;\"><br></p><p style=\"box-sizing: border-box; margin: 0px; color: rgb(94, 94, 94); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 300; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(247, 247, 247); text-decoration-style: initial; text-decoration-color: initial; cursor: auto;\"><img width=\"204\" height=\"204\" alt=\"1.jpg\" src=\"https://www.gstatic.com/webp/gallery/1.jpg\" style=\"min-width: 0px; min-height: 0px;\" class=\"e-rte-image e-imgcenter e-resize\"><br></p><p style=\"box-sizing: border-box; margin: 0px; color: rgb(94, 94, 94); font-family: Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 300; letter-spacing: normal; orphans: 2; text-align: right; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(247, 247, 247); text-decoration-style: initial; text-decoration-color: initial;\"></p><div style=\"text-align: right;\"></div><div><br></div>",
+      "categoryId": "News",
+      "language": "English",
+      "defaultArticleId": 0,
+      "status": false,
+      "featured": true,
+      "thumbnail": "https://www.gstatic.com/webp/gallery/2.jpg",
+      "other": []
+    },
+    {
+      "id": 4,
+      "title": "About Us",
+      "body": "<p><span><meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\"></span></p><h2 style=\"font-size: 16px; margin: 20px 0px 4px; color: rgb(51, 51, 51); font-family: arial, helvetica, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\">Welcome to our website, where you'll find a wealth of information in the form of newsletter articles, calculators, and research reports<br></h2><div><br></div><p style=\"border-collapse: collapse; margin: 0px 0px 10px; color: rgb(51, 51, 51); font-family: arial, helvetica, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\">We hope your visit will help you understand the opportunities and potential rewards that are available when you take a proactive approach to your personal financial situation. [Company] created this website to help you gain a better understanding of the financial concepts behind insurance, investing, retirement, estate planning, and wealth preservation. Most importantly, we hope you see the value of working with skilled professionals to pursue your financial goals. We're here to help educate you about the basic concepts of financial planning, to help you learn more about who we are, and to give you fast, easy access to market performance and data. We hope you take advantage of this resource and visit us often. Be sure to add our site to your list of \"favorites\" in your Internet browser. We frequently update our information, and we wouldn't want you to miss any developments in the area of personal finance.</p><p style=\"border-collapse: collapse; margin: 0px 0px 10px; color: rgb(51, 51, 51); font-family: arial, helvetica, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\">Today's investment climate offers unprecedented opportunities. At [Company], our mission is to help clients take advantage of those opportunities by providing them with three key tools:<br></p><ol style=\"border-collapse: collapse; color: rgb(51, 51, 51); font-family: arial, helvetica, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\"><li style=\"border-collapse: collapse; margin-bottom: 5px;\">A clear understanding of their financial goals</li><li style=\"border-collapse: collapse; margin-bottom: 5px;\">A well-defined roadmap for achieving those goals</li><li style=\"border-collapse: collapse; margin-bottom: 5px;\">Ongoing advice to help adjust their roadmap when their needs change</li></ol><br><p></p>",
+      "categoryId": "AboutUs",
+      "language": "English",
+      "defaultArticleId": 0,
+      "status": false,
+      "allowComment": false,
+      "featured": true,
+      "thumbnail": "https://www.gstatic.com/webp/gallery/1.jpg",
+      "other": []
+    },
+    {
+      "id": 6,
+      "title": "ሳዑዲ ዓረቢያና ኩባ በአሜሪካ የህገ ወጥ የሰዎች ዝውውር ጥቁር መዝገብ ላይ ሰፈሩ",
+      "body": "<p><span><meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\"></span></p><div class=\"_1aa6\" style=\"box-sizing: border-box; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\"><span class=\"_5yl5\" style=\"box-sizing: border-box;\">አዲስ አበባ፣ ሰኔ 14፣ 2011 (ኤፍ.ቢ.ሲ) አሜሪካ ሳዑዲ ዓረቢያን እና ኩባን ህገ ወጥ የሰዎች ዝውውርን በበቂ ሁኔታ ቁጥጥር የማያደርጉ በማለት ጥቁር መዝገብ ላይ አሰፈረች፡፡</span></div><div style=\"box-sizing: border-box; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\"></div><div class=\"_1aa6\" style=\"box-sizing: border-box; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\"><span class=\"_5yl5\" style=\"box-sizing: border-box;\">ይህም በሁለት ሀገራት ላይ ማዕቀብ እንዲጣል ሊያደርግ ይችላል ነው የተባለው፡፡</span></div><div style=\"box-sizing: border-box; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\"></div><div class=\"_1aa6\" style=\"box-sizing: border-box; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\"><span class=\"_5yl5\" style=\"box-sizing: border-box;\">የአሜሪካ የውጭ ጉዳይ መስሪያ ቤት ባወጣው አመታዊ ሪፓርት ሳዑዲ ዓረቢያን በሀገሯ ውስጥ በሚገኙ የሌሎች ሀገራት የጉልበት ሰራተኞች ላይ በሚፈፀም የሰብዓዊ መብት ጥሰት ክስ አቅርቦባታል፡፡</span></div><div style=\"box-sizing: border-box; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\"></div><div class=\"_1aa6\" style=\"box-sizing: border-box; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\"><span class=\"_5yl5\" style=\"box-sizing: border-box;\">በተመሳሳይ ተቀናቃኛቸውን ኩባ ወደ ውጭ ሀገራት ዶክተሮችን በምትልክበት ፕሮግራም ምክንያት በጥቁር መዝገብ ላይ ሰፍራለች።</span></div><div style=\"box-sizing: border-box; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\"></div><div class=\"_1aa6\" style=\"box-sizing: border-box; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\"><span class=\"_5yl5\" style=\"box-sizing: border-box;\">ሀገራቱ ባለፉት አራት ዓመታት በልዩ ሁኔታ ክትትል ሲደርግባቸው ቢቆይም በቀረቡባው ክሶች ላይ ውጤታማ ስራን አላከናወኑም ብሏል የአሜሪካ ውጭ ጉዳይ መስሪያ ቤት፡፡</span></div><div class=\"_1aa6\" style=\"box-sizing: border-box; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\"><span class=\"_5yl5\" style=\"box-sizing: border-box;\">ከእነዚህ ሀገራት በተጨማሪም ቻይና፣ ማይናማር፣ ሰሜን ኮሪያ፣ ሩሲያ እና ቬኒዙዌላ በደረጃ 3 ዝርዝር ውስጥ ይገኛሉ፡፡</span></div><div style=\"box-sizing: border-box; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\"></div><div class=\"_1aa6\" style=\"box-sizing: border-box; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\"><span class=\"_5yl5\" style=\"box-sizing: border-box;\">ሀገራቱ ደረጃ 3 ላይ ተገኙ ማለት አሜሪካ የምታደርገውን ድጋፍ ልታቋርጥ ትችላለች አልያም በዓለም አቀፉ የገንዝብ ተቋምና ሌሎች ዓለም አቀፍ የልማት ተቋማት በኩል የምታደርገውን ድጋፍ ታቋርጣለች።</span></div><div style=\"box-sizing: border-box; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\"></div><div class=\"_1aa6\" style=\"box-sizing: border-box; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\"><span class=\"_5yl5\" style=\"box-sizing: border-box;\">የአሜሪካ የውጭ ጉዳይ ሚኒስትር ማይክ ፖምፒዮ ሀገራቸው ባለፈው ዓመት ከህገ ውጥ የሰዎች ዝውውር ጋር በተያያዘ በ22 ሀገራት ላይ እርምጃ እንደወሰደች አስታውሰዋል።</span></div><div style=\"box-sizing: border-box; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\"></div><div class=\"_1aa6\" style=\"box-sizing: border-box; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\"><span class=\"_5yl5\" style=\"box-sizing: border-box;\">ምንጭ፡- አልጀዚራ</span></div><br><p></p>",
+      "categoryId": "News",
+      "language": "English",
+      "defaultArticleId": 0,
+      "status": false,
+      "allowComment": false,
+      "featured": true,
+      "thumbnail": "https://fanabc.com/wp-content/uploads/2019/06/pompeo.jpg",
+      "other": []
+    },
+    {
+      "id": 7,
+      "title": "450 አርሶ አደሮች ቡና ወደ ውጭ እንዲልኩ ፈቃድ ተሰጣቸው",
+      "body": "<p><span><meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\"></span></p><div class=\"\" data-block=\"true\" data-editor=\"88mcr\" data-offset-key=\"etvrv-0-0\" style=\"box-sizing: border-box; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\"><div class=\"_1mf _1mj\" data-offset-key=\"etvrv-0-0\" style=\"box-sizing: border-box;\"><span style=\"box-sizing: border-box; text-transform: initial;\">አዲስ አበባ፣ ሰኔ 14፣ 2011 (ኤፍ.ቢ.ሲ) 450 አርሶ አደሮች ቡና ወደ ውጭ ሃገራት እንዲልኩ ፈቃድ ተሰጣቸው፡፡</span></div></div><div class=\"\" data-block=\"true\" data-editor=\"88mcr\" data-offset-key=\"2nav6-0-0\" style=\"box-sizing: border-box; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\"><div class=\"_1mf _1mj\" data-offset-key=\"2nav6-0-0\" style=\"box-sizing: border-box;\"><span data-offset-key=\"2nav6-0-0\" style=\"box-sizing: border-box;\">ቡና ሀገሪቱ ወደ ውጭ ከምትልካቸው እና የውጭ ምንዛሬን ከምታገኝባቸው ምርቶች ግንባር ቀደሙ ነው።</span></div></div><div class=\"\" data-block=\"true\" data-editor=\"88mcr\" data-offset-key=\"4jut0-0-0\" style=\"box-sizing: border-box; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\"><div class=\"_1mf _1mj\" data-offset-key=\"4jut0-0-0\" style=\"box-sizing: border-box;\"><span data-offset-key=\"4jut0-0-0\" style=\"box-sizing: border-box;\">በዓመት 800 ሚሊየን ዶላር የሚጠጋ ገቢን ለሀገሪቱ የሚያስገኘው የቡና ምርት እስካሁን ምርቱ ወደ ውጭ ሲላክ የነበረው በአምራቾች ሳይሆን በላኪዎች ብቻ ነበር።</span></div></div><div class=\"\" data-block=\"true\" data-editor=\"88mcr\" data-offset-key=\"fd1r5-0-0\" style=\"box-sizing: border-box; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\"><div class=\"_1mf _1mj\" data-offset-key=\"fd1r5-0-0\" style=\"box-sizing: border-box;\"><span data-offset-key=\"fd1r5-0-0\" style=\"box-sizing: border-box;\">ይህ የሆነበት ምክንያት ደግሞ አርሶ አደሩ ምርቱን አምርቶ ቀጥታ ወደ ወጭ የሚልክበት አሰራር ባለመኖሩ ነው።</span></div></div><div class=\"\" data-block=\"true\" data-editor=\"88mcr\" data-offset-key=\"eg8kg-0-0\" style=\"box-sizing: border-box; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\"><div class=\"_1mf _1mj\" data-offset-key=\"eg8kg-0-0\" style=\"box-sizing: border-box;\"><span data-offset-key=\"eg8kg-0-0\" style=\"box-sizing: border-box;\">ከአመት በፊት ግን በወጣው የቡና አዲስ ሪፎርም ምርቱን የሚያመርተው አርሶ አደር ቀጥታ ወደ ውጭ ምርቱን መላክ የሚችልበት አሰራር ተዘርግቷል፡፡</span></div></div><div class=\"\" data-block=\"true\" data-editor=\"88mcr\" data-offset-key=\"1c20p-0-0\" style=\"box-sizing: border-box; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\"><div class=\"_1mf _1mj\" data-offset-key=\"1c20p-0-0\" style=\"box-sizing: border-box;\"><span data-offset-key=\"1c20p-0-0\" style=\"box-sizing: border-box;\">ይህ የወጣው ሪፎርምም በርካታ አርሶ አደሮችን ተጠቃሚ እያደረገ መሆኑን የኢትዮጵያ ቡና እና ሻይ ባለስልጣን ምክትል ዋና ዳይሬክተር እና የግብይት ዘርፍ ሀላፊ አቶ ሻፊ</span></div></div><div class=\"\" data-block=\"true\" data-editor=\"88mcr\" data-offset-key=\"au97h-0-0\" style=\"box-sizing: border-box; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\"><div class=\"_1mf _1mj\" data-offset-key=\"au97h-0-0\" style=\"box-sizing: border-box;\"><span data-offset-key=\"au97h-0-0\" style=\"box-sizing: border-box;\">ኡመር ለፋና ብሮድካስቲንግ ኮርፖሬት ተናግረዋል፡፡</span></div></div><div class=\"\" data-block=\"true\" data-editor=\"88mcr\" data-offset-key=\"89n99-0-0\" style=\"box-sizing: border-box; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\"><div class=\"_1mf _1mj\" data-offset-key=\"89n99-0-0\" style=\"box-sizing: border-box;\"><span data-offset-key=\"89n99-0-0\" style=\"box-sizing: border-box;\">ይህ ሪፎርም በመውጣቱም በርካታ አርሶ አደሮች የቡና ምርታቸውን ወደ ውጭ ለመላክ ከፍተኛ ፍላጎት እያሳዩ መሆኑንም ገልፀዋል፡፡</span></div></div><div class=\"\" data-block=\"true\" data-editor=\"88mcr\" data-offset-key=\"k9ur-0-0\" style=\"box-sizing: border-box; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\"><div class=\"_1mf _1mj\" data-offset-key=\"k9ur-0-0\" style=\"box-sizing: border-box;\"><span data-offset-key=\"k9ur-0-0\" style=\"box-sizing: border-box;\">በዚህ አመት 450 ለሚሆኑ አርሶ አደሮች ምርታቸውን ወደ ውጭ የሚልኩበት ፈቃድ እንዲያገኙ ተደርጓል።</span></div></div><div class=\"\" data-block=\"true\" data-editor=\"88mcr\" data-offset-key=\"a4q03-0-0\" style=\"box-sizing: border-box; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\"><div class=\"_1mf _1mj\" data-offset-key=\"a4q03-0-0\" style=\"box-sizing: border-box;\"><span data-offset-key=\"a4q03-0-0\" style=\"box-sizing: border-box;\">ፈቃድ ካገኙት አርሶ አደሮች ውስጥ ደግሞ እስከ 60 በመቶ ያህሉ ምርታቸውን ወደ ተለያዩ የውጭ ሀገራት መላክ መጀመራቸውን ነው ምክትል ዋና ዳይሬክተሩ የተናገሩት።</span></div></div><div class=\"\" data-block=\"true\" data-editor=\"88mcr\" data-offset-key=\"4qo1t-0-0\" style=\"box-sizing: border-box; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\"><div class=\"_1mf _1mj\" data-offset-key=\"4qo1t-0-0\" style=\"box-sizing: border-box;\"><span data-offset-key=\"4qo1t-0-0\" style=\"box-sizing: border-box;\">አርሶ አደሮቹ ምርታቸውን ቀጥታ እንዲልኩ ከማድረግ በተጨማሪም ሌሎች ድጋፎች እየተደረጉላቸው ነው ተብሏል።</span></div></div><div class=\"\" data-block=\"true\" data-editor=\"88mcr\" data-offset-key=\"ajn2h-0-0\" style=\"box-sizing: border-box; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\"><div class=\"_1mf _1mj\" data-offset-key=\"ajn2h-0-0\" style=\"box-sizing: border-box;\"><span data-offset-key=\"ajn2h-0-0\" style=\"box-sizing: border-box;\">አቶ ሻፊ ከስድስት በላይ የሚሆኑ አሰራሮችን በመዘርጋትም ተጨማሪ ጥቅም እንዲያገኙ እና ገቢያቸውን የሚያሻሽሉበት መንገድ እንደተዘረጋም ጠቁመዋል፡</span>&nbsp;</div></div><div class=\"\" data-block=\"true\" data-editor=\"88mcr\" data-offset-key=\"1e7bh-0-0\" style=\"box-sizing: border-box; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\"><div class=\"_1mf _1mj\" data-offset-key=\"1e7bh-0-0\" style=\"box-sizing: border-box;\"><span data-offset-key=\"1e7bh-0-0\" style=\"box-sizing: border-box;\">ከሌሎች አርሶ አደሮች ጋር ትስስር በመፍጠር ምርታቸውን ወደ ውጭ እንዲልኩ ማድረግ፣ እሴት ጨምረው ከሚልኩ ቡና ላኪዎች ጋርም ትስስር መፍጠር እንዲችሉ ማድረግ እና ከህብረት ስራ ዩኒየኖች ጋር በመቀናጀት እንዲልኩ ማድረግ የተፈጠሩት</span></div></div><div class=\"\" data-block=\"true\" data-editor=\"88mcr\" data-offset-key=\"8r2jo-0-0\" style=\"box-sizing: border-box; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\"><div class=\"_1mf _1mj\" data-offset-key=\"8r2jo-0-0\" style=\"box-sizing: border-box;\"><span data-offset-key=\"8r2jo-0-0\" style=\"box-sizing: border-box;\">አዳዲስ አሰራሮች እንደሆኑ ተነግሯል፡፡</span></div></div><div class=\"\" data-block=\"true\" data-editor=\"88mcr\" data-offset-key=\"d6geq-0-0\" style=\"box-sizing: border-box; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\"><div class=\"_1mf _1mj\" data-offset-key=\"d6geq-0-0\" style=\"box-sizing: border-box;\"><span data-offset-key=\"d6geq-0-0\" style=\"box-sizing: border-box;\">የውጭ ባለሃብቶችም አርሶ አደሮቹ ጋር ትስስር እንዲያደርጉ የሚያስችል አሰራርም እየተዘረጋ ነው ብለዋል።</span></div></div><div class=\"\" data-block=\"true\" data-editor=\"88mcr\" data-offset-key=\"8dilu-0-0\" style=\"box-sizing: border-box; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\"><div class=\"_1mf _1mj\" data-offset-key=\"8dilu-0-0\" style=\"box-sizing: border-box;\"><span data-offset-key=\"8dilu-0-0\" style=\"box-sizing: border-box;\">ቡና ገዥ የውጭ ባለሃብቶች አርሶ አደሮቹ በቀጥታ እንዲያገኙ የሚደረግበት አካሄድ መጀመሩን እና ከአርሶ አደሮቹ ጋር እየተነጋገሩ ያሉ የውጭ ባለሃብቶች እንዳሉም አንስተዋል።</span></div></div><div class=\"\" data-block=\"true\" data-editor=\"88mcr\" data-offset-key=\"et6ru-0-0\" style=\"box-sizing: border-box; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\"><div class=\"_1mf _1mj\" data-offset-key=\"et6ru-0-0\" style=\"box-sizing: border-box;\"></div></div><div class=\"\" data-block=\"true\" data-editor=\"88mcr\" data-offset-key=\"ff1es-0-0\" style=\"box-sizing: border-box; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\"><div class=\"_1mf _1mj\" data-offset-key=\"ff1es-0-0\" style=\"box-sizing: border-box;\"><span data-offset-key=\"ff1es-0-0\" style=\"box-sizing: border-box;\">በዙፋን ካሳሁን</span></div></div><br><p></p>",
+      "categoryId": "LocalNews",
+      "language": "English",
+      "defaultArticleId": 0,
+      "status": false,
+      "allowComment": false,
+      "featured": true,
+      "thumbnail": "https://fanabc.com/wp-content/uploads/2019/06/coffee-1.jpg ",
+      "other": []
+    },
+    {
+      "id": 8,
+      "title": "PM Dr Abiy Holds Discussion With Djibouti Foreign Minister",
+      "body": "<p><span><meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\"></span></p><p style=\"box-sizing: border-box; margin: 0px 0px 17px; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\">Addis Ababa, June 21, 2019 (FBC) – Prime Minister Dr Abiy Ahmed today met with Mahmoud Ali Youssouf, Minister for Foreign Affairs and International Cooperation of Djibouti.</p><p style=\"box-sizing: border-box; margin: 0px 0px 17px; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\">Mr. Youssouf carried a message from President Ismaïl Omar Guelleh sharing his condolences to the Prime Minister.</p><p style=\"box-sizing: border-box; margin: 0px 0px 17px; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\">In addition, the two discussed bilateral issues including accelerating economic relations between the two countries and strengthening social and cultural relations, according to office of the Prime Minister</p><p style=\"box-sizing: border-box; margin: 0px 0px 17px; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\">Considering regional peace and security, the two also consulted on the role of the Intergovernmental Authority on Development (IGAD) in facilitating stability in Sudan through the leadership of PM Dr Abiy.</p><p style=\"box-sizing: border-box; margin: 0px 0px 17px; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\">Marking the strong relationship between Ethiopia and Djibouti, the visit ended with Prime Minister Dr Abiy and Mr. Youssouf planting seedlings in the compound.</p><br><p></p>",
+      "categoryId": "LocalNews",
+      "language": "English",
+      "defaultArticleId": 0,
+      "status": false,
+      "allowComment": false,
+      "featured": true,
+      "thumbnail": "https://fanabc.com/english/wp-content/uploads/2019/06/64830422_612008852623635_8272284424310095872_n.jpg",
+      "other": [
+        {
+          "Localtitle": "ጠ/ሚ ዶ/ር አብይ አሕመድ ከጅቡቲው የውጭ ጉዳይና ዓለም አቀፍ ግንኙነት ሚኒስትር ጋር ተወያዩ",
+          "Localbody": "<p><span><meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\"></span></p><p style=\"box-sizing: border-box; margin: 0px 0px 17px; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\">አዲስ አበባ፣ ሰኔ 14፣ 2011 (ኤፍ.ቢ.ሲ) ጠቅላይ ሚኒስትር ዶክተር አብይ አሕመድ ከጅቡቲው የውጭ ጉዳይና ዓለም አቀፍ ግንኙነት ሚኒስትር ማሕሙድ አሊ ዩሱፍ ጋር ተወያዩ።</p><p style=\"box-sizing: border-box; margin: 0px 0px 17px; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\">የጅቡቲ የውጭ ጉዳይና ዓለም አቀፍ ግንኙነት ሚኒስትር ማሕሙድ አሊ የፕሬዚዳንት እስማኤል ዑመር ጊሌን የሀዘን መግለጫ ለጠቅላይ ሚኒስትር ዶክተር አብይ አሕመድ ለማቅረብ ነው አዲስ አበባ የተገኙት።</p><p style=\"box-sizing: border-box; margin: 0px 0px 17px; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\">ከዚህ ባለፈም በሁለትዮሽ ጉዳዮች ዙሪያ በተለይም የኢኮኖሚ ትብብርን በማፋጠንና በማህበራዊና ባሕላዊ ግንኙነቶች ላይ ተወያይተዋል።</p><p style=\"box-sizing: border-box; margin: 0px 0px 17px; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\">ቀጠናዊ የሰላምና ደኅንነት ጉዳዮችን በተመለከተ በሱዳን መረጋጋትን ለማስፈን በጠቅላይ ሚኒስትር ዶክተር አብይ አሕመድ አመራር ሥር የምሥራቅ አፍሪካ የልማት በይነ መንግሥታት ድርጅት (ኢጋድ) ሚና ምን መሆን አለበት በሚለው ጉዳይ ላይም መክረዋል።</p><p style=\"box-sizing: border-box; margin: 0px 0px 17px; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\">በኢትዮጵያና ጅቡቲ መካከል ያለውን ጠንካራ ግንኙነት ለመዘከርም ሁለቱ ወገኖች የችግኝ ተከላ በጽህፈት ቤቱ ግቢ ውስጥ ማካሄዳቸውን ከጠቅላይ ሚኒስትር ጽህፈት ቤት ያገኘነው መረጃ ያመላክታል።</p><br><p></p>",
+          "Locallanguage": "Amharic"
+        },
+        {
+          "Localtitle": "MM Dr Abiy Ministira Dhimma Alaa Fi Qunnamtii Idil Addunyaa Jibuutii Waliin Mari’atan",
+          "Localbody": "<span><meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\"><div class=\"\" data-block=\"true\" data-editor=\"2orip\" data-offset-key=\"7sgjs-0-0\" style=\"box-sizing: border-box; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\"><div class=\"_1mf _1mj\" data-offset-key=\"7sgjs-0-0\" style=\"box-sizing: border-box;\"><span data-offset-key=\"7sgjs-0-0\" style=\"box-sizing: border-box;\">Finfinnee, Waxabajjii 14,2011(FBC)- Muummee ministiraa Dooktar Abiy Ahimad ministira Dhimma Alaa fi Qunnamtii Idil Addunyaa Jibuutii Maahimmuud Alii Yasuuf waliin mari’atan.</span></div></div><div class=\"\" data-block=\"true\" data-editor=\"2orip\" data-offset-key=\"a6bi6-0-0\" style=\"box-sizing: border-box; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\"><div class=\"_1mf _1mj\" data-offset-key=\"a6bi6-0-0\" style=\"box-sizing: border-box;\"><span data-offset-key=\"a6bi6-0-0\" style=\"box-sizing: border-box;\">&nbsp;</span></div></div><div class=\"\" data-block=\"true\" data-editor=\"2orip\" data-offset-key=\"9eddh-0-0\" style=\"box-sizing: border-box; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\"><div class=\"_1mf _1mj\" data-offset-key=\"9eddh-0-0\" style=\"box-sizing: border-box;\"><span data-offset-key=\"9eddh-0-0\" style=\"box-sizing: border-box;\">Ministirichi ibsa gaddaa preezdaant Ismaa’eel Oomar Giilleeh dhiyeessufi Finfinnee kan dhufan.</span></div></div><div class=\"\" data-block=\"true\" data-editor=\"2orip\" data-offset-key=\"8bsm2-0-0\" style=\"box-sizing: border-box; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\"><div class=\"_1mf _1mj\" data-offset-key=\"8bsm2-0-0\" style=\"box-sizing: border-box;\"><span data-offset-key=\"8bsm2-0-0\" style=\"box-sizing: border-box;\">&nbsp;</span></div></div><div class=\"\" data-block=\"true\" data-editor=\"2orip\" data-offset-key=\"eptli-0-0\" style=\"box-sizing: border-box; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\"><div class=\"_1mf _1mj\" data-offset-key=\"eptli-0-0\" style=\"box-sizing: border-box;\"><span data-offset-key=\"eptli-0-0\" style=\"box-sizing: border-box;\">Kanaan ala dhimmoota hariiroo biyyoota lamaanii gama diinagdee fi hawaasummaatin cimsanirratti waliin hojjechuuf mari’ataniiru.</span></div></div><div class=\"\" data-block=\"true\" data-editor=\"2orip\" data-offset-key=\"dm59j-0-0\" style=\"box-sizing: border-box; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\"><div class=\"_1mf _1mj\" data-offset-key=\"dm59j-0-0\" style=\"box-sizing: border-box;\"><span data-offset-key=\"dm59j-0-0\" style=\"box-sizing: border-box;\">&nbsp;</span></div></div><div class=\"\" data-block=\"true\" data-editor=\"2orip\" data-offset-key=\"65tl8-0-0\" style=\"box-sizing: border-box; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\"><div class=\"_1mf _1mj\" data-offset-key=\"65tl8-0-0\" style=\"box-sizing: border-box;\"><span data-offset-key=\"65tl8-0-0\" style=\"box-sizing: border-box;\">Mootummaan Misoomaa Baha Afrikaa(IGAD) muummee ministiraa Dooktar Abiy Ahimadiin duurfamu Sudaan tasgabbeessuu keessatti ga’een isaa maal ta’uu akka qabus mari’ataniiru.</span></div></div><div class=\"\" data-block=\"true\" data-editor=\"2orip\" data-offset-key=\"3emk6-0-0\" style=\"box-sizing: border-box; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\"><div class=\"_1mf _1mj\" data-offset-key=\"3emk6-0-0\" style=\"box-sizing: border-box;\"><span data-offset-key=\"3emk6-0-0\" style=\"box-sizing: border-box;\">&nbsp;</span></div></div><div class=\"\" data-block=\"true\" data-editor=\"2orip\" data-offset-key=\"3tgo0-0-0\" style=\"box-sizing: border-box; color: rgb(33, 33, 33); font-family: Roboto; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial;\"><div class=\"_1mf _1mj\" data-offset-key=\"3tgo0-0-0\" style=\"box-sizing: border-box;\"><span data-offset-key=\"3tgo0-0-0\" style=\"box-sizing: border-box;\">Dhumarrattis mooraa Waajjira Muummee Ministiraatti biqiltuu dhaabaniiru.</span></div></div></span><p><br></p>",
+          "Locallanguage": "Oromifa"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "What Is Love ?",
+      "body": "<p><span style=\"font-size: 14pt;\">Have you Ever Fall In Love ? How was the felling ?</span></p>",
+      "categoryId": "Forum",
+      "language": "English",
+      "defaultArticleId": 0,
+      "status": false,
+      "allowComment": true,
+      "featured": false,
+      "thumbnail": "http://www.mjsspot.com/wp-content/uploads/2018/05/Forums-6.png",
+      "other": []
+    },
+    {
+      "id": 10,
+      "title": "Do violent video games lead to behavior problems?",
+      "body": "<p><span><meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\"><span><span style=\"font-size: 14pt;\">Do violent video games lead to behavior problems?</span></span></span><br></p>",
+      "categoryId": "Forum",
+      "language": "English",
+      "defaultArticleId": 0,
+      "status": false,
+      "allowComment": true,
+      "featured": false,
+      "thumbnail": "a",
+      "other": []
+    },
+    {
+      "id": 11,
+      "title": "Should teenagers have access to condoms and birth control?",
+      "body": "<p><span><meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\"><span><span style=\"font-size: 14pt;\">Should teenagers have access to condoms and birth control?</span></span></span><br></p>",
+      "categoryId": "Forum",
+      "language": "English",
+      "defaultArticleId": 0,
+      "status": false,
+      "allowComment": true,
+      "featured": false,
+      "thumbnail": "a",
+      "other": []
+    },
+    {
+      "id": 12,
+      "title": "How do you feel about lesbian/gay/bi/transgender people?",
+      "body": "<p><span><meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\"><span style=\"font-size: 14pt;\">How do you feel about lesbian/gay/bi/transgender people?</span></span><br></p>",
+      "categoryId": "Forum",
+      "language": "English",
+      "defaultArticleId": 0,
+      "status": false,
+      "allowComment": true,
+      "featured": false,
+      "thumbnail": "a",
+      "other": []
+    }
+  ],
+  "link": [
+    {
+      "id": 1,
+      "title": "Link 1",
+      "desc": "this is link 1",
+      "address": "https://www.google.com/images",
+      "language": "English",
+      "status": true,
+      "other": [
+        {
+          "Localtitle": "megenagn 1",
+          "Localdesc": "yrhe megenagn ande new",
+          "Locallanguage": "Amharic"
+        },
+        {
+          "Localtitle": "oddu 1",
+          "Localdesc": "this is oddu teko",
+          "Locallanguage": "Oromifa"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "google",
+      "desc": "this is goog",
+      "address": "http://google.com",
+      "language": "English",
+      "status": true,
+      "other": []
+    }
+  ],
+  "subscription": [
+    {
+      "id": 1,
+      "fullName": "Surafel Habte",
+      "email": "Sura@gmail.com"
+    },
+    {
+      "id": 2,
+      "fullName": "Abebe Kebede",
+      "email": "AbeKebe@gmail.com"
+    },
+    {
+      "id": 3,
+      "fullName": "Yohannes Mekonene",
+      "email": "yo@gmail.com"
+    },
+    {
+      "id": 4,
+      "fullName": "surafel habte",
+      "email": "Suralhabte@gmail.com"
+    },
+    {
+      "id": 5,
+      "fullName": "surafel habte",
+      "email": "abc@gmailc.com"
+    },
+    {
+      "id": 6,
+      "fullName": "",
+      "email": "addis@gmail.lcom"
+    },
+    {
+      "id": 7,
+      "fullName": "",
+      "email": "antend@gmail.com"
+    }
+  ],
+  "studentProfile": [
+    {
+      "id": 1,
+      "fullName": "Surafel Habte G/Mariam",
+      "gender": "Male",
+      "nationality": "Ethiopian",
+      "institute": "private",
+      "modeOfTraining": "regular",
+      "occupationTrainedOn": "Clenical Nursing",
+      "subcity": "Lideta",
+      "wereda": "20",
+      "homePhone": "011-550-96-45",
+      "officephone": "011-552-63-42",
+      "martialStatus": "single",
+      "disability": "no",
+      "natureOfDisability": "",
+      "email": "sura@gmail.com"
+    },
+    {
+      "id": 2,
+      "fullName": "Ababo Guta AduGna",
+      "gender": "female",
+      "nationality": "Ethiopian",
+      "institute": "private",
+      "modeOfTraining": "regular",
+      "occupationTrainedOn": "Clenical Nursing",
+      "subcity": "fsdfdsf",
+      "wereda": "sdfdsf",
+      "homePhone": "dfdsfdsf",
+      "officephone": "fdsfdsf",
+      "martialStatus": "single",
+      "disability": "no",
+      "natureOfDisability": "",
+      "email": "abekebe@example.com"
+    },
+    {
+      "id": 3,
+      "fullName": "Ababo Guta AduGna",
+      "gender": "female",
+      "nationality": "Ethiopian",
+      "institute": "private",
+      "modeOfTraining": "regular",
+      "occupationTrainedOn": "Clenical Nursing",
+      "subcity": "fgfdg",
+      "wereda": "fgfgfd",
+      "homePhone": "dfgdfg",
+      "officephone": "fdgfdg",
+      "martialStatus": "marrid",
+      "disability": "yes",
+      "natureOfDisability": "fgdfdgfd",
+      "email": "sura@example.com"
+    },
+    {
+      "id": 4,
+      "fullName": "dsgdfsgf",
+      "gender": "female",
+      "nationality": "dfgdfg",
+      "institute": "fdgfdg",
+      "modeOfTraining": "fdgfdg",
+      "occupationTrainedOn": "fgfdg",
+      "subcity": "fgfd",
+      "wereda": "fgfd",
+      "homePhone": "fgdfg",
+      "officephone": "dfgfdg",
+      "martialStatus": "single",
+      "disability": "no",
+      "natureOfDisability": "",
+      "email": "fdgfd@hgh.ffg"
+    }
+  ],
+  "studentschedule": [
+    {
+      "id": 1,
+      "occupation": "clerical nurse",
+      "Group_Number": "7038",
+      "Center": "National College",
+      "Date": "03/05/2019",
+      "Time": "02 : 30 Am"
+    },
+    {
+      "id": 2,
+      "occupation": "clerical nurse",
+      "Group_Number": "7038",
+      "Center": "National College",
+      "Date": "03/05/2019",
+      "Time": "02 : 30 Am",
+      "email": "sura@gmail.com"
+    },
+    {
+      "id": 3,
+      "occupation": "clerical nurse",
+      "Group_Number": "7038",
+      "Center": "National College",
+      "Date": "03/05/2019",
+      "Time": "02 : 30 Am",
+      "email": "abekebe@example.com"
+    }
+  ],
+  "studentresult": [
+    {
+      "id": 1,
+      "occupation": "clerical nurse",
+      "practical_Result": "satisfactory",
+      "knowldge_Result": "satisfactory",
+      "status": "competent",
+      "email": "sura@gmail.com"
+    },
+    {
+      "id": 2,
+      "occupation": "ICT Officer",
+      "practical_Result": "satisfactory",
+      "knowldge_Result": "satisfactory",
+      "status": "competent",
+      "email": "abekebe@example.com"
+    },
+    {
+      "id": 3,
+      "occupation": "Junior Accountant",
+      "practical_Result": "satisfactory",
+      "knowldge_Result": "/",
+      "status": "competent",
+      "email": "yoha@example.com"
+    }
+  ],
+  "studentApplication": [
+    {
+      "id": 1,
+      "location": "5",
+      "sector": "CSTM",
+      "subSector": "HAH",
+      "occupation": "HAH CBP3",
+      "unitOfCompetency": "HAH CBP3",
+      "amount": "375",
+      "invoiceNumber": "212333",
+      "email": "sura@example.com"
+    },
+    {
+      "id": 2,
+      "location": "Bole",
+      "sector": "CSTM",
+      "subSector": "HAH",
+      "occupation": "HAH CBP3",
+      "unitOfCompetency": [
+        {
+          "id": "HAH CBP3 04 0912",
+          "itemName": "Coach Others in Job Skills"
+        },
+        {
+          "id": "HAH CBP3 05 0912",
+          "itemName": "Prepare Bakery Products for Patisseries"
+        },
+        {
+          "id": "HAH CBP3 03 0912",
+          "itemName": "Prepare and Produce Yeast Goods"
+        }
+      ],
+      "amount": "375",
+      "invoiceNumber": "211",
+      "email": "sura@example.com"
+    },
+    {
+      "id": 3,
+      "location": "Bole",
+      "sector": "CSTM",
+      "subSector": "HAH",
+      "occupation": "HAH CBP3",
+      "unitOfCompetency": [
+        {
+          "id": "HAH CBP3 04 0912",
+          "itemName": "Coach Others in Job Skills"
+        },
+        {
+          "id": "HAH CBP3 01 0912",
+          "itemName": "Prepare and Produce Pastries"
+        }
+      ],
+      "amount": "375",
+      "invoiceNumber": "12215",
+      "email": "fdgfd@hgh.ffg"
+    }
+  ],
+  "studentBasicInfo": [
+    {
+      "id": 1,
+      "fullName": "Surafel Habte G/mariam",
+      "sex": "Male",
+      "nationality": "Ethiopian",
+      "institute": "private",
+      "mode_of_training": "regular",
+      "occupation_trained_on": "Clenical Nursing",
+      "email": "sura@gmail.com"
+    },
+    {
+      "id": 2,
+      "fullName": "Abebe Kebede",
+      "sex": "Male",
+      "nationality": "Ethiopian",
+      "institute": "Government",
+      "mode_of_training": "regular",
+      "occupation_trained_on": "Labratory Techician",
+      "email": "abekebe@example.com"
+    }
+  ],
+  "sector": [
+    {
+      "id": "6",
+      "sector_code": "AGRM",
+      "sector_name": "AGRICULTURE",
+      "parent": null,
+      "sector_name_am": null,
+      "status": "Active"
+    },
+    {
+      "id": "5",
+      "sector_code": "CSTM",
+      "sector_name": "CULTURE, SPORTS AND TURISM",
+      "parent": null,
+      "sector_name_am": null,
+      "status": "Active"
+    },
+    {
+      "id": "4",
+      "sector_code": "EISM",
+      "sector_name": "ECONOMIC INFRASTRUCTURE",
+      "parent": null,
+      "sector_name_am": null,
+      "status": "Active"
+    },
+    {
+      "id": "1",
+      "sector_code": "HLTM",
+      "sector_name": "HEALTH  ",
+      "parent": null,
+      "sector_name_am": null,
+      "status": "Active"
+    },
+    {
+      "id": "2",
+      "sector_code": "INDM",
+      "sector_name": "INDUSTRY DEVELOPMENT",
+      "parent": null,
+      "sector_name_am": null,
+      "status": "Active"
+    },
+    {
+      "id": "3",
+      "sector_code": "LSAM",
+      "sector_name": "LABOR AND SOCIAL AFFAIRS",
+      "parent": null,
+      "sector_name_am": null,
+      "status": "Active"
+    }
+  ],
+  "subsector": [
+    {
+      "id": "16",
+      "sector_code": "FNT",
+      "sector_name": "FINE ARTS",
+      "parent": "CSTM",
+      "sector_name_am": null,
+      "status": "Active"
+    },
+    {
+      "id": "29",
+      "sector_code": "HAH",
+      "sector_name": "HOTEL AND HOSPITALITY",
+      "parent": "CSTM",
+      "sector_name_am": null,
+      "status": "Active"
+    },
+    {
+      "id": "17",
+      "sector_code": "HDB",
+      "sector_name": "Hairdressing",
+      "parent": "CSTM",
+      "sector_name_am": null,
+      "status": "Active"
+    },
+    {
+      "id": "18",
+      "sector_code": "LIS",
+      "sector_name": "LIBRARY AND INFORMATION SERVICES",
+      "parent": "CSTM",
+      "sector_name_am": null,
+      "status": "Active"
+    },
+    {
+      "id": "35",
+      "sector_code": "MNP",
+      "sector_name": "MUSICAL INSTRUMENT PLAYING",
+      "parent": "CSTM",
+      "sector_name_am": null,
+      "status": "Active"
+    },
+    {
+      "id": "15",
+      "sector_code": "SPR",
+      "sector_name": "Sports Running",
+      "parent": "CSTM",
+      "sector_name_am": null,
+      "status": "Active"
+    },
+    {
+      "id": "12",
+      "sector_code": "SPT",
+      "sector_name": "THROWING AND JUMPING",
+      "parent": "CSTM",
+      "sector_name_am": null,
+      "status": "Active"
+    },
+    {
+      "id": "28",
+      "sector_code": "TAT",
+      "sector_name": "TRAVEL AND TOURS",
+      "parent": "CSTM",
+      "sector_name_am": null,
+      "status": "Active"
+    },
+    {
+      "id": "34",
+      "sector_code": "TRA",
+      "sector_name": "THEATRE ARTS  ",
+      "parent": "CSTM",
+      "sector_name_am": null,
+      "status": "Active"
+    },
+    {
+      "id": "36",
+      "sector_code": "VBF",
+      "sector_name": "VOLLEYBALL AND FOOTBALL ",
+      "parent": "CSTM",
+      "sector_name_am": null,
+      "status": "Active"
+    },
+    {
+      "id": "44",
+      "sector_code": "VFM",
+      "sector_name": "Video Film Making",
+      "parent": "CSTM",
+      "sector_name_am": null,
+      "status": "Active"
+    }
+  ],
+  "occupation": [
+    {
+      "occ_code": "HAH CBP3",
+      "occ_name": "Confectionery, Baking and Pastry Making ",
+      "sector_name": "HOTEL AND HOSPITALITY",
+      "sector_code": "HAH",
+      "amount_for_knowledge": null,
+      "level": "3",
+      "amount_for_uc": null,
+      "amount_for_level": "375",
+      "assessor_payment_rate": "0.00",
+      "center_payment_rate": "0.00",
+      "ass_type": "Both"
+    },
+    {
+      "occ_code": "HAH COP3",
+      "occ_name": "Catering Operation",
+      "sector_name": "HOTEL AND HOSPITALITY",
+      "sector_code": "HAH",
+      "amount_for_knowledge": null,
+      "level": "3",
+      "amount_for_uc": null,
+      "amount_for_level": "205",
+      "assessor_payment_rate": "50.00",
+      "center_payment_rate": "80.00",
+      "ass_type": "Both"
+    },
+    {
+      "occ_code": "HAH ECF3",
+      "occ_name": "Ethiopian Cultural Food Preparation",
+      "sector_name": "HOTEL AND HOSPITALITY",
+      "sector_code": "HAH",
+      "amount_for_knowledge": null,
+      "level": "3",
+      "amount_for_uc": null,
+      "amount_for_level": "375",
+      "assessor_payment_rate": "50.00",
+      "center_payment_rate": "250.00",
+      "ass_type": "Both"
+    },
+    {
+      "occ_code": "HAH FBS3",
+      "occ_name": "Food and Beverage Service ",
+      "sector_name": "HOTEL AND HOSPITALITY",
+      "sector_code": "HAH",
+      "amount_for_knowledge": null,
+      "level": "3",
+      "amount_for_uc": null,
+      "amount_for_level": "205",
+      "assessor_payment_rate": "0.00",
+      "center_payment_rate": "0.00",
+      "ass_type": "Both"
+    },
+    {
+      "occ_code": "HAH FBS4",
+      "occ_name": "Food and beverage Service Supervision",
+      "sector_name": "HOTEL AND HOSPITALITY",
+      "sector_code": "HAH",
+      "amount_for_knowledge": null,
+      "level": "4",
+      "amount_for_uc": null,
+      "amount_for_level": "205",
+      "assessor_payment_rate": "0.00",
+      "center_payment_rate": "0.00",
+      "ass_type": "Both"
+    },
+    {
+      "occ_code": "HAH FDC3",
+      "occ_name": "Foreign  Dish Cooking",
+      "sector_name": "HOTEL AND HOSPITALITY",
+      "sector_code": "HAH",
+      "amount_for_knowledge": null,
+      "level": "3",
+      "amount_for_uc": null,
+      "amount_for_level": "375",
+      "assessor_payment_rate": "50.00",
+      "center_payment_rate": "250.00",
+      "ass_type": "Both"
+    },
+    {
+      "occ_code": "HAH FOS3",
+      "occ_name": "Front Office Service",
+      "sector_name": "HOTEL AND HOSPITALITY",
+      "sector_code": "HAH",
+      "amount_for_knowledge": null,
+      "level": "3",
+      "amount_for_uc": null,
+      "amount_for_level": "205",
+      "assessor_payment_rate": "0.00",
+      "center_payment_rate": "0.00",
+      "ass_type": "Both"
+    },
+    {
+      "occ_code": "HAH FOS4",
+      "occ_name": "Front Office Supervision",
+      "sector_name": "HOTEL AND HOSPITALITY",
+      "sector_code": "HAH",
+      "amount_for_knowledge": null,
+      "level": "4",
+      "amount_for_uc": null,
+      "amount_for_level": "205",
+      "assessor_payment_rate": "0.00",
+      "center_payment_rate": "0.00",
+      "ass_type": "Both"
+    },
+    {
+      "occ_code": "HAH FPS4",
+      "occ_name": "Food Production Supervision",
+      "sector_name": "HOTEL AND HOSPITALITY",
+      "sector_code": "HAH",
+      "amount_for_knowledge": null,
+      "level": "4",
+      "amount_for_uc": null,
+      "amount_for_level": "205",
+      "assessor_payment_rate": "0.00",
+      "center_payment_rate": "0.00",
+      "ass_type": "Both"
+    },
+    {
+      "occ_code": "HAH HHM5",
+      "occ_name": "Hotel Management",
+      "sector_name": "HOTEL AND HOSPITALITY",
+      "sector_code": "HAH",
+      "amount_for_knowledge": null,
+      "level": "5",
+      "amount_for_uc": null,
+      "amount_for_level": null,
+      "assessor_payment_rate": null,
+      "center_payment_rate": null,
+      "ass_type": "Both"
+    },
+    {
+      "occ_code": "HAH HKO1",
+      "occ_name": "Hotel Kitchen Operation",
+      "sector_name": "HOTEL AND HOSPITALITY",
+      "sector_code": "HAH",
+      "amount_for_knowledge": null,
+      "level": "1",
+      "amount_for_uc": null,
+      "amount_for_level": "230",
+      "assessor_payment_rate": "50.00",
+      "center_payment_rate": "120.00",
+      "ass_type": "Practical"
+    },
+    {
+      "occ_code": "HAH HKO2",
+      "occ_name": "Hotel Kitchen Operation",
+      "sector_name": "HOTEL AND HOSPITALITY",
+      "sector_code": "HAH",
+      "amount_for_knowledge": null,
+      "level": "2",
+      "amount_for_uc": null,
+      "amount_for_level": "360",
+      "assessor_payment_rate": "50.00",
+      "center_payment_rate": "250.00",
+      "ass_type": "Practical"
+    },
+    {
+      "occ_code": "HAH HKO3",
+      "occ_name": "Housekeeping Operation",
+      "sector_name": "HOTEL AND HOSPITALITY",
+      "sector_code": "HAH",
+      "amount_for_knowledge": null,
+      "level": "3",
+      "amount_for_uc": null,
+      "amount_for_level": "205",
+      "assessor_payment_rate": "0.00",
+      "center_payment_rate": "0.00",
+      "ass_type": "Both"
+    },
+    {
+      "occ_code": "HAH HLS4",
+      "occ_name": "Housekeeping and Laundry Supervision",
+      "sector_name": "HOTEL AND HOSPITALITY",
+      "sector_code": "HAH",
+      "amount_for_knowledge": null,
+      "level": "4",
+      "amount_for_uc": null,
+      "amount_for_level": "205",
+      "assessor_payment_rate": "0.00",
+      "center_payment_rate": "0.00",
+      "ass_type": "Both"
+    },
+    {
+      "occ_code": "HAH HOP1",
+      "occ_name": "Hotel Operation",
+      "sector_name": "HOTEL AND HOSPITALITY",
+      "sector_code": "HAH",
+      "amount_for_knowledge": null,
+      "level": "1",
+      "amount_for_uc": null,
+      "amount_for_level": "210",
+      "assessor_payment_rate": "0.00",
+      "center_payment_rate": "0.00",
+      "ass_type": "Practical"
+    },
+    {
+      "occ_code": "HAH HOP2",
+      "occ_name": "Hotel Operation",
+      "sector_name": "HOTEL AND HOSPITALITY",
+      "sector_code": "HAH",
+      "amount_for_knowledge": null,
+      "level": "2",
+      "amount_for_uc": null,
+      "amount_for_level": "210",
+      "assessor_payment_rate": "0.00",
+      "center_payment_rate": "0.00",
+      "ass_type": "Practical"
+    }
+  ],
+  "unit_of_competency": [
+    {
+      "uc_code": "HAH CBP3 01 0912",
+      "uc_name": "Prepare and Produce Pastries",
+      "occ_code": "HAH CBP3",
+      "id": "2891",
+      "uc_name_am": null,
+      "status": "Active"
+    },
+    {
+      "uc_code": "HAH CBP3 02 0912",
+      "uc_name": "Prepare and Produce Cakes",
+      "occ_code": "HAH CBP3",
+      "id": "2892",
+      "uc_name_am": null,
+      "status": "Active"
+    },
+    {
+      "uc_code": "HAH CBP3 03 0912",
+      "uc_name": "Prepare and Produce Yeast Goods",
+      "occ_code": "HAH CBP3",
+      "id": "2893",
+      "uc_name_am": null,
+      "status": "Active"
+    },
+    {
+      "uc_code": "HAH CBP3 04 0912",
+      "uc_name": "Coach Others in Job Skills",
+      "occ_code": "HAH CBP3",
+      "id": "2894",
+      "uc_name_am": null,
+      "status": "Active"
+    },
+    {
+      "uc_code": "HAH CBP3 05 0912",
+      "uc_name": "Prepare Bakery Products for Patisseries",
+      "occ_code": "HAH CBP3",
+      "id": "2895",
+      "uc_name_am": null,
+      "status": "Active"
+    },
+    {
+      "uc_code": "HAH CBP3 06 0912",
+      "uc_name": "Prepare and Present Gateaux, Torten and Cakes",
+      "occ_code": "HAH CBP3",
+      "id": "2896",
+      "uc_name_am": null,
+      "status": "Active"
+    },
+    {
+      "uc_code": "HAH CBP3 07 0912",
+      "uc_name": "Present Desserts",
+      "occ_code": "HAH CBP3",
+      "id": "2897",
+      "uc_name_am": null,
+      "status": "Active"
+    },
+    {
+      "uc_code": "HAH CBP3 08 0912",
+      "uc_name": "Prepare and Display Petits Fours",
+      "occ_code": "HAH CBP3",
+      "id": "2898",
+      "uc_name_am": null,
+      "status": "Active"
+    },
+    {
+      "uc_code": "HAH CBP3 09 0912",
+      "uc_name": "Prepare and Model Marzipan",
+      "occ_code": "HAH CBP3",
+      "id": "2899",
+      "uc_name_am": null,
+      "status": "Active"
+    },
+    {
+      "uc_code": "HAH CBP3 10 0912",
+      "uc_name": "Prepare Desserts to Meet Special Dietary Requirements",
+      "occ_code": "HAH CBP3",
+      "id": "2900",
+      "uc_name_am": null,
+      "status": "Active"
+    },
+    {
+      "uc_code": "HAH CBP3 11 0912",
+      "uc_name": "Prepare and Display Sugar Work",
+      "occ_code": "HAH CBP3",
+      "id": "2901",
+      "uc_name_am": null,
+      "status": "Active"
+    },
+    {
+      "uc_code": "HAH CBP3 12 0912",
+      "uc_name": "Plan, Prepare and Display Sweet Buffet Showpieces",
+      "occ_code": "HAH CBP3",
+      "id": "2902",
+      "uc_name_am": null,
+      "status": "Active"
+    },
+    {
+      "uc_code": "HAH CBP3 13 0912",
+      "uc_name": "Plan Patisserie Operations",
+      "occ_code": "HAH CBP3",
+      "id": "2903",
+      "uc_name_am": null,
+      "status": "Active"
+    },
+    {
+      "uc_code": "HAH CBP3 14 0912",
+      "uc_name": "Prepare Chocolate and Chocolate Confectionery",
+      "occ_code": "HAH CBP3",
+      "id": "2904",
+      "uc_name_am": null,
+      "status": "Active"
+    },
+    {
+      "uc_code": "HAH CBP3 15 0912",
+      "uc_name": "Monitor Implementation of Work plan / Activities",
+      "occ_code": "HAH CBP3",
+      "id": "2905",
+      "uc_name_am": null,
+      "status": "Active"
+    },
+    {
+      "uc_code": "HAH CBP3 16 0912",
+      "uc_name": "Apply Quality Control",
+      "occ_code": "HAH CBP3",
+      "id": "2906",
+      "uc_name_am": null,
+      "status": "Active"
+    },
+    {
+      "uc_code": "HAH CBP3 17 0912",
+      "uc_name": "Lead Workplace Communication",
+      "occ_code": "HAH CBP3",
+      "id": "2907",
+      "uc_name_am": null,
+      "status": "Active"
+    },
+    {
+      "uc_code": "HAH CBP3 18 0912",
+      "uc_name": "Lead Small Teams",
+      "occ_code": "HAH CBP3",
+      "id": "2908",
+      "uc_name_am": null,
+      "status": "Active"
+    },
+    {
+      "uc_code": "HAH CBP3 19 0912",
+      "uc_name": "Improve Business Practice",
+      "occ_code": "HAH CBP3",
+      "id": "2909",
+      "uc_name_am": null,
+      "status": "Active"
+    },
+    {
+      "uc_code": "HAH CBP3 20 1012",
+      "uc_name": "Maintain Quality System and Continuous Improvement Processes (Kaizen)",
+      "occ_code": "HAH CBP3",
+      "id": "2910",
+      "uc_name_am": null,
+      "status": "Active"
+    }
+  ],
+  "location": [
+    {
+      "id": 1,
+      "location": "Megenagn"
+    },
+    {
+      "id": 2,
+      "location": "Arat Kilo"
+    },
+    {
+      "id": 3,
+      "location": "Piassa"
+    },
+    {
+      "id": 4,
+      "location": "Bole"
+    },
+    {
+      "id": 5,
+      "location": "Sengatera"
+    }
+  ],
+  "media": [
+    {
+      "id": 1,
+      "title": "Image One",
+      "desc": "This is Our First Image",
+      "mediaType": "Images",
+      "featured": true,
+      "album": "Images",
+      "mediaUrl": "/assets/image/1.jpeg"
+    },
+    {
+      "id": 2,
+      "title": "Video One",
+      "desc": "This is Our First Video",
+      "mediaType": "Video",
+      "featured": false,
+      "album": "Video",
+      "mediaUrl": "https://youtu.be/N-CJ6-mruts"
+    },
+    {
+      "id": 3,
+      "title": "Image Two",
+      "desc": "Image Two",
+      "mediaType": "Images",
+      "featured": true,
+      "album": "Images",
+      "mediaUrl": "/assets/image/2.jpeg"
+    },
+    {
+      "id": 4,
+      "title": "Image Three",
+      "desc": "Image three",
+      "mediaType": "Images",
+      "featured": true,
+      "album": "Images",
+      "mediaUrl": "/assets/image/3.jpeg"
+    },
+    {
+      "id": 5,
+      "title": "Image four",
+      "desc": "Image Four",
+      "mediaType": "Images",
+      "featured": true,
+      "album": "Images",
+      "mediaUrl": "/assets/image/4.jpeg"
+    },
+    {
+      "id": 6,
+      "title": "Image Five",
+      "desc": "Image Five",
+      "mediaType": "Images",
+      "featured": true,
+      "album": "Images",
+      "mediaUrl": "/assets/image/5.jpeg"
+    },
+    {
+      "id": 7,
+      "title": "Image Six",
+      "desc": "Image Six",
+      "mediaType": "Images",
+      "featured": true,
+      "album": "Images",
+      "mediaUrl": "/assets/image/6.jpeg"
+    },
+    {
+      "id": 8,
+      "title": "Image Seven",
+      "desc": "Image Seven",
+      "mediaType": "Images",
+      "featured": true,
+      "album": "Images",
+      "mediaUrl": "/assets/image/7.jpeg"
+    },
+    {
+      "id": 9,
+      "title": "Image Eight",
+      "desc": "Image Eight",
+      "mediaType": "Images",
+      "featured": true,
+      "album": "Images",
+      "mediaUrl": "/assets/image/8.jpeg"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "comment": "hello",
+      "commentBy": "surafel habte",
+      "commentForArticle": 1,
+      "date": 1560946199305
+    },
+    {
+      "id": 2,
+      "comment": "hi",
+      "commentBy": "surafel habte",
+      "commentForArticle": 1,
+      "date": 1560946488069
+    },
+    {
+      "id": 3,
+      "comment": "good job",
+      "commentBy": "surafel habte",
+      "commentForArticle": 1,
+      "date": 1561013044953
+    },
+    {
+      "id": 4,
+      "comment": "but why this ?",
+      "commentBy": "surafel habte",
+      "commentForArticle": 2,
+      "date": 1561015153829
+    },
+    {
+      "id": 5,
+      "comment": "So what",
+      "commentBy": "surafel habte",
+      "commentForArticle": 2,
+      "date": 1561015254841
+    },
+    {
+      "id": 6,
+      "comment": "hank you for visiting us and making your first purchase! We’re glad that you found what you were looking for. It is our goal that you are always happy with what you bought from us, so please let us know if your buying experience was anything short of excellent. We look forward to seeing you again. Have a great day!",
+      "commentBy": null,
+      "commentForArticle": 1,
+      "date": 1561120951046
+    },
+    {
+      "id": 7,
+      "comment": "coool !",
+      "commentBy": null,
+      "commentForArticle": 9,
+      "date": 1561191481146
+    },
+    {
+      "id": 8,
+      "comment": "no cool",
+      "commentBy": null,
+      "commentForArticle": 9,
+      "date": 1561191491176
+    },
+    {
+      "id": 9,
+      "comment": "yes",
+      "commentBy": null,
+      "commentForArticle": 11,
+      "date": 1561192046239
+    },
+    {
+      "id": 10,
+      "comment": "Very Cool!",
+      "commentBy": "surafel habte",
+      "commentForArticle": 9,
+      "date": 1561193739869
+    },
+    {
+      "id": 11,
+      "comment": "111",
+      "commentBy": "surafel habte",
+      "commentForArticle": 9,
+      "date": 1561360263435
+    }
+  ],
+  "message": [
+    {
+      "id": 1,
+      "fullname": "surafel habte",
+      "email": "sura@example.com",
+      "subject": "Urgency",
+      "message": "the system is very cool,  but where should i go to get the registrar ?"
+    },
+    {
+      "id": 2,
+      "fullname": "abebe kebde",
+      "email": "abe@example.com",
+      "subject": "thank you",
+      "message": "this is message for appreciation ! your system is cool ! keep going."
+    },
+    {
+      "id": 3,
+      "fullname": "surafel habte",
+      "email": "sura@example.com",
+      "subject": "insurgency ",
+      "message": "this is a cool app keep going and  do more !"
+    }
+  ],
+  "actors": [
+    {
+      "id": 1,
+      "fullName": "Surafel Habte G/Mariam",
+      "email": "su@gmail.com",
+      "password": "abcd1234"
+    }
+  ]
+}

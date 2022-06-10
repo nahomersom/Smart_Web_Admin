@@ -1,0 +1,136 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <ejs-tab id="element" class="e-fill">
+          <e-tabitems>
+            <e-tabitem [header]="headerText[0]">
+              <ng-template #content>
+                <div class="e-card">
+                    <font size="4" *ngIf="hideCreateButton">Create New Team Member</font>
+                    <font size="4" *ngIf="!hideCreateButton">Edit Team Member</font>
+                    <p></p>
+                    <span align="center">
+                        <img src="{{teamService.original_url + '/' + photoUrl}}" style="width:200px;height:200px; border-radius: 50%;" class="img-thumbnail" *ngIf="!hideCreateButton" />
+                      </span>
+                      <span align="center" *ngIf="!hideCreateButton">
+                        <font size="2">Photo Preview</font>
+                      </span>
+                     <p></p>
+                    <ejs-textbox formControlName="fullName" placeholder="Full Name" floatLabelType="Auto"></ejs-textbox>
+                    <div *ngIf="getfullName.errors">
+                      <p *ngIf="formSubmitted && getfullName.hasError('required')" style="color:rgba(255, 0, 0, 0.671)">
+                        <font size="2">* Full Name is required</font>
+                      </p>
+                    </div>
+                    <ejs-textbox formControlName="profession" placeholder="Profession" floatLabelType="Auto"></ejs-textbox>
+                    <div *ngIf="getprofession.errors">
+                      <p *ngIf="formSubmitted && getprofession.hasError('required')" style="color:rgba(255, 0, 0, 0.671)">
+                        <font size="2">* Profession is required</font>
+                      </p>
+                    </div>                  
+                    <ejs-textbox formControlName="email" placeholder="Email" floatLabelType="Auto"></ejs-textbox>
+                    <div *ngIf="getemail.errors">
+                      <p *ngIf="formSubmitted && getemail.hasError('required')" style="color:rgba(255, 0, 0, 0.671)">
+                        <font size="2">* Email is required</font>
+                      </p>
+                      <p *ngIf="formSubmitted && getemail.hasError('email')" style="color:rgba(255, 0, 0, 0.671)">
+                          <font size="2">* Invalid Email</font>
+                      </p>
+                    </div>                  
+                    <ejs-textbox formControlName="phone" placeholder="Phone" floatLabelType="Auto"></ejs-textbox>
+                    <div *ngIf="getphone.errors">
+                      <p *ngIf="formSubmitted && getphone.hasError('required')" style="color:rgba(255, 0, 0, 0.671)">
+                        <font size="2">* Phone is required</font>
+                      </p>
+                    </div>
+                    <ejs-textbox [multiline]="true" rows="4" formControlName="biography" placeholder="Biography" floatLabelType="Auto"></ejs-textbox>
+                    <div *ngIf="getbiography.errors">
+                        <p *ngIf="formSubmitted && getbiography.hasError('required')" style="color:rgba(255, 0, 0, 0.671)">
+                          <font size="2">* Biography is required</font>
+                        </p>
+                    </div>
+                    <ejs-textbox formControlName="facebook" placeholder="Facebook" floatLabelType="Auto"></ejs-textbox>
+                    <ejs-textbox formControlName="twitter" placeholder="Twitter" floatLabelType="Auto"></ejs-textbox>
+                    <ejs-textbox formControlName="linkedin" placeholder="Linked In" floatLabelType="Auto"></ejs-textbox>
+                    <p></p>
+                    <ejs-uploader id="photo" name="photo" 
+                    allowedExtensions='.jpg,.jpeg,.png'
+                    maxFileSize = 1e+7
+                    [multiple]="false" 
+                    (change)="onFileChangePhoto(fileInput)" 
+                    (clearing)="getphoto.setValue('')"
+                    #fileInput>
+                  </ejs-uploader>                  
+                    <div *ngIf="getphoto.errors">
+                      <p *ngIf="formSubmitted && getphoto.hasError('required')" style="color:rgba(255, 0, 0, 0.671)">
+                        <font size="2">* Profile Photo is required</font>
+                      </p>
+                    </div>  
+                    <p></p>                  
+                    <button ejs-button cssClass="e-success" *ngIf="hideCreateButton">Create</button>
+                    <button ejs-button cssClass="e-success" *ngIf="hideSaveChangesButton">Save Changes</button>  
+                </div>
+              </ng-template>
+            </e-tabitem>
+
+            <e-tabitem [header]="headerText[1]">
+              <ng-template #content>
+              <div formArrayName="localLanguage">
+                <p></p>
+                <div *ngFor="let localLanguage of getlocalLanguage.controls;let j = index">               
+                  <div class="e-card">  
+                        <p></p>           
+                        <div [formGroupName]="j">
+                            <ejs-dropdownlist id="ddlelement" [dataSource]="ddlelementDataLanguage" formControlName="Locallanguage" placeholder="language"></ejs-dropdownlist>
+                            <div *ngIf="getFormGroup(j).controls['Locallanguage'].errors">
+                                <p *ngIf="getFormGroup(j).controls['Locallanguage'].hasError('required')" style="color:rgba(255, 0, 0, 0.671)">
+                                  <font size="2">* Select Language</font>
+                                </p>
+                            </div>
+                            <p></p>               
+                            <ejs-textbox formControlName="LocalfullName" placeholder="Full Name" floatLabelType="Auto"></ejs-textbox>
+                            <div *ngIf="getFormGroup(j).controls['LocalfullName'].errors">
+                                <p *ngIf="getFormGroup(j).controls['LocalfullName'].hasError('required')" style="color:rgba(255, 0, 0, 0.671)">
+                                  <font size="2">* Full Name is required</font>
+                                </p>
+                            </div>
+                            <p></p>
+                            <ejs-textbox formControlName="Localprofession" placeholder="Profession" floatLabelType="Auto"></ejs-textbox>
+                            <div *ngIf="getFormGroup(j).controls['Localprofession'].errors">
+                                <p *ngIf="getFormGroup(j).controls['Localprofession'].hasError('required')" style="color:rgba(255, 0, 0, 0.671)">
+                                  <font size="2">* Profession is required</font>
+                                </p>
+                            </div>
+                            <p></p>
+                            <ejs-textbox [multiline]="true" rows="3" formControlName="Localbiography" placeholder="Biography" floatLabelType="Auto"></ejs-textbox>
+                            <div *ngIf="getFormGroup(j).controls['Localbiography'].errors">
+                                <p *ngIf="getFormGroup(j).controls['Localbiography'].hasError('required')" style="color:rgba(255, 0, 0, 0.671)">
+                                  <font size="2">* Biography is required</font>
+                                </p>
+                            </div>
+                            <p></p>
+                        </div>
+                        <div class="removebuttonBox">
+                            <button ejs-button type="button" cssClass="e-danger" (click)="RemoveOtherLanguage(j,IdsArray[j])">Remove</button>
+                        </div>
+                  </div>
+                  <br />
+                  <hr />
+                 </div>
+                </div>
+                  <div class="buttonBox">
+                    <button type="button" id="add-language" ejs-button cssClass="e-success" (click)="addLocalLanguage()"
+                    *ngIf="getlocalLanguage.length < 3">Add language</button>               
+                  </div>
+              </ng-template>
+            </e-tabitem>
+            
+          </e-tabitems>
+        </ejs-tab>
+      </form>
+      <div class="col-md-2"></div>
+    </div>
+  </div>
+</div>

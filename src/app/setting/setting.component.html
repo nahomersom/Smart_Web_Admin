@@ -1,0 +1,79 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-2"></div>
+
+    <div class="col-md-8">
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+          <ejs-tab id="element" class="e-fill">
+            <e-tabitems>
+              <e-tabitem [header]="headerText[0]">
+                <ng-template #content>
+                    <div class="e-card">
+                        <font size="4">Setting</font>
+                        <ejs-textbox formControlName="pobox" placeholder="P.O.Box" floatLabelType="Auto"></ejs-textbox>
+                        <ejs-textbox formControlName="email" placeholder="Email" floatLabelType="Auto"></ejs-textbox>
+                        <div *ngIf="getemail.errors">
+                          <p *ngIf="formSubmitted && getemail.hasError('required')" style="color:rgba(255, 0, 0, 0.671)"><font size="2">email is required</font></p>
+                          <p *ngIf="formSubmitted && getemail.hasError('email')" style="color:rgba(255, 0, 0, 0.671)"><font size="2">invalid email</font></p>
+                        </div>
+                        <ejs-textbox formControlName="phone" placeholder="Phone Number" floatLabelType="Auto"></ejs-textbox>
+                        <p></p>
+                        <div *ngIf="getphone.errors">
+                            <p
+                              *ngIf="formSubmitted && getphone.hasError('required')"
+                              style="color:rgba(255, 0, 0, 0.671)"
+                            >
+                              <font size="2">Phone Number is required</font>
+                            </p>
+                        </div>
+                        <ejs-textbox formControlName="fax" placeholder="Fax Number" floatLabelType="Auto"></ejs-textbox>
+                        <ejs-textbox [multiline]="true" formControlName="street" placeholder="Street address" floatLabelType="Auto"></ejs-textbox>
+                        <p></p>
+                        <div *ngIf="getstreet.errors">
+                            <p
+                              *ngIf="formSubmitted && getstreet.hasError('required')"
+                              style="color:rgba(255, 0, 0, 0.671)"
+                            >
+                              <font size="2">Street address is required</font>
+                            </p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="e-card">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ejs-textbox formControlName="latitude" placeholder="Latitude" floatLabelType="Auto"></ejs-textbox>
+                            </div>
+                            <div class="col-md-6">
+                                <ejs-textbox formControlName="longtiude" placeholder="Longtiude" floatLabelType="Auto"></ejs-textbox>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template> 
+              </e-tabitem> 
+              <e-tabitem [header]="headerText[1]">
+                  <ng-template #content>
+                      <div class="e-card">
+                          <font size="4">Setting</font>
+                          <ejs-textbox formControlName="facebook" placeholder="Facebook Page" floatLabelType="Auto"></ejs-textbox>
+                          <ejs-textbox formControlName="linkedin" placeholder="Telegram Page" floatLabelType="Auto"></ejs-textbox>
+                          <ejs-textbox formControlName="twitter" placeholder="Twitter" floatLabelType="Auto"></ejs-textbox>
+                          <br />   
+                          <button ejs-button cssClass="e-success" *ngIf="hideCreateButton">
+                            Create
+                          </button>
+                          <button ejs-button cssClass="e-success" *ngIf="hideSaveChangesButton">
+                            Save Changes
+                          </button>
+                      </div>
+                   </ng-template>
+              </e-tabitem>  
+            </e-tabitems>
+          </ejs-tab> 
+        </form>
+      </div>  
+      <div class="col-md-2"></div>
+
+  </div>
+</div>
+

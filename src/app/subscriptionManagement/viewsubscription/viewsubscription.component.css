@@ -1,0 +1,8 @@
+.not-invalid{
+    border: 2px solid rgba(255, 0, 0, 0.692);
+  }
+  .e-card{
+    padding: 3%;
+  }
+  html, body { height: 100%; }
+body { margin-top: 12%; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: antiquewhite}

@@ -1,0 +1,162 @@
+<div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+          <ejs-tab id="element" class="e-fill">
+            <e-tabitems>
+              <e-tabitem [header]="headerText[0]"> 
+                <ng-template #content>
+                  <div class="e-card">
+                    <font size="4" *ngIf="hideCreateButton">Create New Quick Link</font>
+                    <font size="4" *ngIf="!hideCreateButton">Edit Quick Link</font>
+                    <p></p>
+                    <p></p>
+                    <ejs-textbox
+                      formControlName="title"
+                      placeholder="Link Title"
+                      floatLabelType="Auto"
+                    >
+                    </ejs-textbox>
+                    <div *ngIf="gettitle.errors">
+                      <p
+                        *ngIf="formSubmitted && gettitle.hasError('required')"
+                        style="color:rgba(255, 0, 0, 0.671)"
+                      >
+                        <font size="2">title is required</font>
+                      </p>
+                    </div>
+
+                    <ejs-textbox
+                      [multiline]="true"
+                      formControlName="desc"
+                      placeholder="Link Description"
+                      floatLabelType="Auto"
+                    >
+                    </ejs-textbox>
+
+                    <ejs-textbox
+                      formControlName="address"
+                      placeholder="Link Address"
+                      floatLabelType="Auto"
+                    >
+                    </ejs-textbox>
+                    <div *ngIf="getaddress.errors">
+                      <p
+                        *ngIf="formSubmitted && getaddress.hasError('required')"
+                        style="color:rgba(255, 0, 0, 0.671)"
+                      >
+                        <font size="2">Link Address is required</font>
+                      </p>
+                    </div>
+                    <p></p>
+                    <ejs-checkbox
+                      label="Make This Quick Link Disabled (Not Viewed by Others)"
+                      formControlName="status"
+                    >
+                    </ejs-checkbox>
+                    <br />
+
+                    <div>
+                      <button
+                        ejs-button
+                        cssClass="e-success"
+                        *ngIf="hideCreateButton"
+                      >
+                        Create
+                      </button>
+                      <button
+                        ejs-button
+                        cssClass="e-success"
+                        *ngIf="hideSaveChangesButton"
+                      >
+                        Save Changes
+                      </button>
+                    </div>
+                  </div>
+                </ng-template>
+              </e-tabitem>
+
+              <e-tabitem [header]="headerText[1]">
+                <ng-template #content>                 
+                  <div formArrayName="localLanguage">
+                  <div
+                    *ngFor="
+                      let localLanguage of getlocalLanguage.controls;
+                      let i = index
+                    "
+                  >
+                    <div class="e-card">
+                        <br />
+                        <div [formGroupName]="i">
+                            <ejs-dropdownlist
+                              id="ddlelement"
+                              [dataSource]="ddlelementData"
+                              placeholder="language"
+                              formControlName="Locallanguage"
+                            ></ejs-dropdownlist>
+                            <div *ngIf="getFormGroup(i).controls['Locallanguage'].errors">
+                                <p *ngIf="getFormGroup(i).controls['Locallanguage'].hasError('required')" style="color:rgba(255, 0, 0, 0.671)">
+                                  <font size="2">* Select Language</font>
+                                </p>
+                            </div>
+                            <p></p>
+                          <ejs-textbox
+                            formControlName="Localtitle"
+                            placeholder="Link Title"
+                            floatLabelType="Auto"
+                          ></ejs-textbox>
+                          <div *ngIf="getFormGroup(i).controls['Localtitle'].errors">
+                              <p *ngIf="getFormGroup(i).controls['Localtitle'].hasError('required')" style="color:rgba(255, 0, 0, 0.671)">
+                                <font size="2">* Title is required</font>
+                              </p>
+                          </div>
+                          <p></p>
+                          <ejs-textbox
+                            [multiline]="true"
+                            formControlName="Localdesc"
+                            placeholder="Link Description"
+                            floatLabelType="Auto"
+                          >
+                          </ejs-textbox>
+                          <div *ngIf="getFormGroup(i).controls['Localdesc'].errors">
+                              <p *ngIf="getFormGroup(i).controls['Localdesc'].hasError('required')" style="color:rgba(255, 0, 0, 0.671)">
+                                <font size="2">* Description is required</font>
+                              </p>
+                          </div>
+                        </div>
+                      <div class="removebuttonBox">
+                          <button ejs-button type="button" cssClass="e-danger" (click)="RemoveOtherLanguage(i,IdsArray[i])">Remove</button>
+                      </div>
+                    </div>
+                    <br />
+                    <hr />
+                  </div>
+                  </div>
+                  <div class="buttonBox">
+                    <button
+                      type="button"
+                      ejs-button
+                      cssClass="e-success"
+                      (click)="addLocalLanguage()"
+                      *ngIf="getlocalLanguage.length < 3"
+                    >
+                      Add language
+                    </button>
+                  </div>
+                  <p align="center" *ngIf="getlocalLanguage.length === 3">
+                    <font size="2" color="red"
+                      >Maximum Language is Reached</font
+                    >
+                  </p>
+                </ng-template>
+              </e-tabitem>
+            </e-tabitems>
+          </ejs-tab>
+        </form>
+      </div>
+      <div class="col-2"></div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,166 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <ejs-tab id="element" class="e-fill">
+          <e-tabitems>
+            <e-tabitem [header]="headerText[0]">
+              <ng-template #content>
+                <div class="e-card">
+                  <font size="4" *ngIf="hideCreateButton">Create New Menu</font>
+                  <font size="4" *ngIf="!hideCreateButton">Edit Menu</font>
+                  <p></p>
+                  <ejs-textbox
+                    formControlName="title"
+                    placeholder="Menu Title"
+                    floatLabelType="Auto"
+                  >
+                  </ejs-textbox>
+                  <div *ngIf="gettitle.errors">
+                    <p
+                      *ngIf="formSubmitted && gettitle.hasError('required')"
+                      style="color:rgba(255, 0, 0, 0.671)"
+                    >
+                      <font size="2">title is required</font>
+                    </p>
+                  </div>
+
+                  <ejs-textbox
+                    [multiline]="true"
+                    formControlName="desc"
+                    placeholder="Menu Description"
+                    floatLabelType="Auto"
+                  >
+                  </ejs-textbox>
+                 <p></p>
+                  <ejs-dropdownlist
+                      formControlName="categoryId"
+                      id="ddlelement"
+                      [dataSource]="ddlelementDataCategory"
+                      [fields]='fields'
+                      placeholder="Select Category">
+                  </ejs-dropdownlist>
+                  <div *ngIf="getCategoryId.errors">
+                    <p
+                      *ngIf="
+                        formSubmitted && getCategoryId.hasError('required')
+                      "
+                      style="color:rgba(255, 0, 0, 0.671)"
+                    >
+                     <font size="2"> Select Category</font>
+                    </p>
+                  </div>              
+                  <br />               
+                  <ejs-dropdownlist formControlName="parentMenu" 
+                  id="ddlelement" [dataSource]="ddlelementDataMenu" 
+                  placeholder='Parent Menu' [fields]='fields'>
+                  </ejs-dropdownlist>
+                  <br />
+                  <ejs-checkbox
+                  label="Make this Menu Visible for Members Only"
+                  formControlName="memberOnly">
+                  </ejs-checkbox>
+                  <br />
+                  <ejs-checkbox
+                  label="Make this Menu Visible By Others"
+                  formControlName="status">
+                  </ejs-checkbox>
+                  <br />
+
+                  <button
+                    ejs-button
+                    cssClass="e-success"
+                    *ngIf="hideCreateButton"
+                  >
+                    Create
+                  </button>
+                  <button
+                    ejs-button
+                    cssClass="e-success"
+                    *ngIf="hideSaveChangesButton"
+                  >
+                    Save Changes
+                  </button>
+                </div>
+              </ng-template>
+            </e-tabitem>
+
+            <e-tabitem [header]="headerText[1]">
+              <ng-template #content>
+                <div formArrayName="localLanguage">
+                <div
+                  *ngFor="
+                    let localLanguage of getlocalLanguage.controls;
+                    let i = index
+                  "
+                >
+                  <div class="e-card">
+                      <div [formGroupName]="i">
+                        <font size="4">Create New Menu</font>
+                        <ejs-dropdownlist
+                        id="ddlelement"
+                        [dataSource]="ddlelementData"
+                        formControlName="Locallanguage"
+                        placeholder="language"
+                      ></ejs-dropdownlist>
+                      <div *ngIf="getFormGroup(i).controls['Locallanguage'].errors">
+                          <p *ngIf="getFormGroup(i).controls['Locallanguage'].hasError('required')" style="color:rgba(255, 0, 0, 0.671)">
+                            <font size="2">* Select Language</font>
+                          </p>
+                      </div>
+                      <p></p>
+                      <ejs-textbox
+                          formControlName="Localtitle"
+                          placeholder="Menu Title"
+                          floatLabelType="Auto"
+                        >
+                        </ejs-textbox>
+                        <div *ngIf="getFormGroup(i).controls['Localtitle'].errors">
+                            <p *ngIf="getFormGroup(i).controls['Localtitle'].hasError('required')" style="color:rgba(255, 0, 0, 0.671)">
+                              <font size="2">* Title is required</font>
+                            </p>
+                        </div>
+                        <p></p>
+                        <ejs-textbox
+                          [multiline]="true"
+                          formControlName="Localdesc"
+                          placeholder="Menu Description"
+                          floatLabelType="Auto"
+                        >
+                        </ejs-textbox>
+                        <div *ngIf="getFormGroup(i).controls['Localdesc'].errors">
+                            <p *ngIf="getFormGroup(i).controls['Localdesc'].hasError('required')" style="color:rgba(255, 0, 0, 0.671)">
+                              <font size="2">* Description is required</font>
+                            </p>
+                        </div>
+                      </div>
+                      <div class="removebuttonBox">
+                        <button ejs-button type="button" cssClass="e-danger" (click)="RemoveOtherLanguage(i,IdsArray[i])">Remove</button>
+                    </div>
+                  </div>
+                  <br />
+                  <hr />
+                </div>
+                </div>
+                <div class="buttonBox">
+                  <button
+                    type="button"
+                    ejs-button
+                    cssClass="e-success"
+                    id="add-language"
+                    (click)="addLocalLanguage()"
+                    *ngIf="getlocalLanguage.length < 3"
+                    >
+                      Add language
+                    </button>
+                  </div>
+                  <p align="center" *ngIf="getlocalLanguage.length === 3"><font size="2" color="red">Maximum Language is Reached</font></p>
+              </ng-template>
+            </e-tabitem>
+          </e-tabitems>
+        </ejs-tab>
+      </form>
+    </div>
+  </div>
+</div>

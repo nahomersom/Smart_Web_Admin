@@ -1,0 +1,229 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <ejs-tab id="element" class="e-fill">
+          <e-tabitems>
+            <e-tabitem [header]="headerText[0]">
+              <ng-template #content>
+                <div class="e-card">
+                  <font size="4" *ngIf="hideCreateButton">Create New Article</font>
+                  <font size="4" *ngIf="!hideCreateButton">Edit Article</font>
+                  <p></p>
+                  <ejs-textbox
+                    formControlName="title"
+                    placeholder="Article Title"
+                    floatLabelType="Auto"
+                  >
+                  </ejs-textbox>
+
+                  <div *ngIf="gettitle.errors">
+                    <p
+                      *ngIf="formSubmitted && gettitle.hasError('required')"
+                      style="color:rgba(255, 0, 0, 0.671)"
+                    >
+                      <font size="2">* Article title is required</font>
+                    </p>
+                  </div>
+                  <br />
+                  <ejs-dropdownlist
+                    formControlName="categoryId"
+                    id="ddlelement"
+                    [dataSource]="ddlelementDataCategory"
+                    [fields]='fields'
+                    placeholder="Select Category">
+                </ejs-dropdownlist>
+
+                
+                  <div *ngIf="getCategoryId.errors">
+                    <p
+                      *ngIf="formSubmitted && getCategoryId.hasError('required')"
+                      style="color:rgba(255, 0, 0, 0.671)">
+                      <font size="2">* Select Category</font>
+                    </p>
+                  </div>
+                  <br />
+
+                  <!-- <ejs-richtexteditor
+                    [toolbarSettings]="tools"
+                    [iframeSettings]="iframe"
+                    placeholder="Write New Article"
+                    [showCharCount]="true"
+                    formControlName="body"
+                    class="editor"
+                  >
+                    <ng-template></ng-template>
+                  </ejs-richtexteditor> -->
+
+                  <ckeditor [editor]="Editor" formControlName="body" [config]="config"
+                  ></ckeditor>
+
+                  <div *ngIf="getbody.errors">
+                    <p
+                      *ngIf="formSubmitted && getbody.hasError('required')"
+                      style="color:rgba(255, 0, 0, 0.671)"
+                    >
+                      <font size="2">* Article Content is Required</font>
+                    </p>
+                  </div>
+                  <p *ngIf="hideSaveChangesButton && photoUrl !== 'null'">
+                    <img src="{{ articleService.original_url + '/' + photoUrl }}" 
+                    style="width:100%;height:400px;" class="img-thumbnail" />
+                    <span align="center">
+                      <font size="2">* Article Thumbnail Preview</font>
+                    </span>
+                  </p>  
+                  <p></p>
+                  <ejs-uploader
+                    id="thumbnail" 
+                    name="thumbnail"
+                    formControlName="thumbnail"
+                    allowedExtensions = '.jpg,.jpeg,.png'
+                    maxFileSize = 1e+7
+                    (change)="onFileChangeThumbnail(fileInput)"
+                    (clearing)="getThumbnail.setValue('')"
+                    [multiple]="false"
+                    #fileInput                 
+                  >
+                  </ejs-uploader>             
+                  <p *ngIf="hideSaveChangesButton"></p>
+               
+                  <br />
+                  <ejs-checkbox
+                  label="Make Article View By Members Only"
+                  formControlName="membersOnly"
+                  [checked]="true"
+                  ></ejs-checkbox>
+                  <br />
+                  <ejs-checkbox
+                    label="Make Article Featured (Post to Front End)"
+                    formControlName="featured"
+                    [checked]="true"
+                  ></ejs-checkbox>
+                  <br />
+                  <ejs-checkbox
+                    label=" Allow Commenting (this makes Article forum automatically) "
+                    formControlName="allowComment"
+                  ></ejs-checkbox>
+                  <br />
+                  <ejs-checkbox
+                  label=" Subscribes Article (This Makes article to be send as News for Site Subscribers) "
+                  formControlName="subscribed"
+                ></ejs-checkbox>
+                <br />
+                  <ejs-checkbox
+                    label="Make This Article Disabled (Not Viewed by Others) "
+                    formControlName="status"
+                  ></ejs-checkbox>
+                  <br />
+
+                  <button
+                    ejs-button
+                    cssClass="e-success"
+                    *ngIf="hideCreateButton"
+                  >
+                    Create
+                  </button>
+                  <button
+                    ejs-button
+                    cssClass="e-success"
+                    *ngIf="hideSaveChangesButton"
+                  >
+                    Save Changes
+                  </button>
+                </div>
+              </ng-template>
+            </e-tabitem>
+
+            <e-tabitem [header]="headerText[1]">
+              <ng-template #content>
+                <div formArrayName="localLanguage">
+                <div
+                  *ngFor="
+                    let localLanguage of getlocalLanguage.controls;
+                    let j = index
+                  "
+                >
+                  <div class="e-card"> 
+                      <div [formGroupName]="j">
+                          <ejs-dropdownlist
+                            id="ddlelement"
+                            [dataSource]="ddlelementDataLanguage"
+                            formControlName="Locallanguage"
+                            placeholder="language"
+                          >
+                          </ejs-dropdownlist>
+                          <div *ngIf="getFormGroup(j).controls['Locallanguage'].errors">
+                              <p *ngIf="getFormGroup(j).controls['Locallanguage'].hasError('required')" style="color:rgba(255, 0, 0, 0.671)">
+                                <font size="2">* Select Language</font>
+                              </p>
+                          </div>
+                          <p *ngIf="hideSaveChangesButton"></p>
+                        <ejs-textbox
+                          formControlName="Localtitle"
+                          placeholder="Article Title"
+                          floatLabelType="Auto"
+                        ></ejs-textbox>
+                        <div *ngIf="getFormGroup(j).controls['Localtitle'].errors">
+                            <p *ngIf="getFormGroup(j).controls['Localtitle'].hasError('required')" style="color:rgba(255, 0, 0, 0.671)">
+                              <font size="2">* Title is required</font>
+                            </p>
+                        </div>
+                        <p></p>
+                        <p *ngIf="hideSaveChangesButton"></p>
+                        <!-- <ejs-richtexteditor
+                          [toolbarSettings]="tools"
+                          [iframeSettings]="iframe"
+                          placeholder="Write New Article"
+                          [showCharCount]="true"
+                          formControlName="Localbody"
+                        >
+                          <ng-template></ng-template>
+                        </ejs-richtexteditor> -->
+
+                        <ckeditor [editor]="Editor" formControlName="Localbody" [config]="config"
+                        ></ckeditor>
+                        <div *ngIf="getFormGroup(j).controls['Localbody'].errors">
+                            <p *ngIf="getFormGroup(j).controls['Localbody'].hasError('required')" style="color:rgba(255, 0, 0, 0.671)">
+                              <font size="2">* Write Something is required</font>
+                            </p>
+                        </div>
+                        <ejs-checkbox
+                        label=" Subscribes Article (This Makes article to be send as News for Site Subscribers) "
+                        formControlName="LocalSubscribed"
+                        ></ejs-checkbox>
+                        <p></p>
+                      </div>
+                      <div class="removebuttonBox">
+                          <button ejs-button type="button" cssClass="e-danger" (click)="RemoveOtherLanguage(j,IdsArray[j])">Remove</button>
+                      </div>
+                  </div>
+                  <br />
+                  <hr />
+                </div>
+                </div>
+
+                <div class="buttonBox">
+                  <button
+                    type="button"
+                    id="add-language"
+                    ejs-button
+                    cssClass="e-success"
+                    (click)="addLocalLanguage()"
+                    *ngIf="getlocalLanguage.length < 3"
+                    >
+                      Add language
+                    </button>
+                  </div>
+                  <p align="center" *ngIf="getlocalLanguage.length === 3"><font size="2" color="red">Maximum Language is Reached</font></p>
+              </ng-template>
+            </e-tabitem>
+          </e-tabitems>
+        </ejs-tab>
+      </form>
+      <div class="col-md-1"></div>
+      <div class="col-md-1"></div>
+    </div>
+  </div>
+</div>

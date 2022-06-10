@@ -1,0 +1,66 @@
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+
+      </div>
+      <div class="col-md-6">
+          <div class = "e-card"> 
+                  <font size='5'>Change Profile</font>
+                  <p></p>
+                  <form [formGroup]="formgroup" (ngSubmit)="updateProfile()">
+                            <ejs-textbox formControlName="fullName" placeholder="Full Name" floatLabelType="Auto">
+                            </ejs-textbox>
+                            <p></p>
+                            <div *ngIf="getfullname.errors">
+                                <p *ngIf="formSubmitted && getfullname.hasError('required')" style="color:rgba(255, 0, 0, 0.671)">
+                                    <font size="2">Full Name is required</font> 
+                                </p>
+                            </div>
+                            <ejs-textbox type="email" formControlName="email" placeholder="Email" floatLabelType="Auto"></ejs-textbox>                           
+                            <br />
+                            <ejs-textbox type="password" formControlName="oldpassword" placeholder="Old Password" floatLabelType="Auto"></ejs-textbox>
+                            <div *ngIf="getoldpassword.errors">
+                                <p *ngIf="formSubmitted && getoldpassword.hasError('required')" style="color:rgba(255, 0, 0, 0.671)">
+                                    <font size="2">Old Password is required</font>
+                                </p>
+                                <p *ngIf="formSubmitted && getoldpassword.hasError('minlength')" style="color:rgba(255, 0, 0, 0.671)">
+                                    <font size="2">Old Password Should be atleast 5 character</font>         
+                                </p>
+                                <p *ngIf="formSubmitted && getoldpassword.hasError('maxlength')" style="color:rgba(255, 0, 0, 0.671)">
+                                    <font size="2">Old Password Should be no more than 8 character</font> 
+                                </p>
+                            </div>            
+                            <ejs-textbox type="password" formControlName="password" placeholder="New Password" floatLabelType="Auto"></ejs-textbox>
+                            <div *ngIf="getpassword.errors">
+                                <p *ngIf="formSubmitted && getpassword.hasError('required')" style="color:rgba(255, 0, 0, 0.671)">
+                                    <font size="2">Password is required</font>
+                                </p>
+                                <p *ngIf="formSubmitted && getpassword.hasError('minlength')" style="color:rgba(255, 0, 0, 0.671)">
+                                    <font size="2">Password Should be atleast 5 character</font>         
+                                </p>
+                                <p *ngIf="formSubmitted && getpassword.hasError('maxlength')" style="color:rgba(255, 0, 0, 0.671)">
+                                    <font size="2">Password Should be no more than 8 character</font> 
+                                 </p>
+                            </div>
+                            <ejs-textbox type="password" formControlName="repassword" placeholder="Confirm Password" floatLabelType="Auto">
+                            </ejs-textbox>  
+                            <div *ngIf="getrepassword.errors">
+                                <p *ngIf="formSubmitted && getrepassword.hasError('required')" style="color:rgba(255, 0, 0, 0.671)">
+                                    <font size="2">Confirm Password</font>
+                                </p>
+                            </div>
+                            <div *ngIf="passwordMatchFail">
+                                <p style="color:rgba(255, 0, 0, 0.671)"><font size="2">Password Not Match</font></p>
+                            </div>
+                            <p></p>
+                            <button ejs-button cssClass="e-success">Change Profile</button>
+                  </form>
+             
+                </div>
+          </div>
+      </div>
+      <div class="col-md-3">
+
+      </div>
+  </div>

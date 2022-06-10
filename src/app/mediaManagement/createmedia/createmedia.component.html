@@ -1,0 +1,160 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-2"></div>
+
+    <div class="col-md-8">
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="e-card">
+          <font size="4" *ngIf="hideCreateButton">Create New Media</font>
+          <font size="4" *ngIf="!hideCreateButton">Edit Media</font>
+          <p></p>
+          <ejs-textbox
+            formControlName="title"
+            placeholder="Media Title"
+            floatLabelType="Auto"
+          >
+          </ejs-textbox>
+          <div *ngIf="gettitle.errors">
+            <p
+              *ngIf="formSubmitted && gettitle.hasError('required')"
+              style="color:rgba(255, 0, 0, 0.671)"
+            >
+              <font size="2"> * title is required</font>
+            </p>
+          </div>
+
+          <ejs-textbox
+            [multiline]="true"
+            formControlName="desc"
+            placeholder="Media Description"
+            floatLabelType="Auto"
+          >
+          </ejs-textbox>
+
+          <ejs-dropdownlist
+            id="ddlelement"
+            [dataSource]="ddlelementDataMediaType"
+            formControlName="mediaType"
+            placeholder="Select Media Type"
+          ></ejs-dropdownlist>
+          <div *ngIf="getMediaType.errors">
+            <p
+              *ngIf="formSubmitted && getMediaType.hasError('required')"
+              style="color:rgba(255, 0, 0, 0.671)"
+            >
+              <font size="2"> * Select Media Type</font>
+            </p>
+          </div>
+          <p></p>
+          <img [src]="file_url" style="width:100%;height:300px;" 
+          *ngIf="mediaUrl !== '' && getMediaType.value === 'Images'" class="img-thumbnail" />
+          <video [src]="file_url" style="width:100%;height:300px;" 
+          *ngIf="mediaUrl !== '' && getMediaType.value === 'Video'" class="img-thumbnail"></video>
+          <p></p>
+          <ejs-uploader
+              id="media"
+              name="media"
+              allowedExtensions = '.jpeg,.jpg,.mp4'
+              maxFileSize = 1.6e+9
+              [multiple]="false"
+              (change)="onFileChangeMedia(fileInput)"
+              (removing)="onFileClearMedia($event)"
+              formControlName="media"
+              #fileInput                 
+              >
+          </ejs-uploader>
+          <div *ngIf="getmedia.errors">
+            <p
+              *ngIf="formSubmitted && getmedia.hasError('required')"
+              style="color:rgba(255, 0, 0, 0.671)"
+            >
+              <font size="2"> * please select a file</font>
+            </p>
+          </div>
+          <p></p>
+          <!-- <ejs-textbox
+            formControlName="mediaUrl"
+            placeholder="Media Url"
+            floatLabelType="Auto"
+          >
+          </ejs-textbox>
+
+          <div *ngIf="getmediaUrl.errors">
+            <p
+              *ngIf="formSubmitted && getmediaUrl.hasError('required')"
+              style="color:rgba(255, 0, 0, 0.671)"
+            >
+              <font size="2">
+                * If You Dont't Upload The media Please Specifay the media
+                Server Url</font
+              >
+            </p>
+            <p *ngIf="formSubmitted && getmediaUrl.hasError('url')" style="color:rgba(255, 0, 0, 0.671)">
+               <font size="2">* Media Server Url Must Be Valid</font>
+            </p>
+          </div> -->
+          <p></p>
+          <ejs-dropdownlist
+            id="ddlelement"
+            [dataSource]="categories"
+            [fields]="fields"
+            formControlName="category"
+            placeholder="Select album"
+          ></ejs-dropdownlist>
+          <div *ngIf="getCategory.errors">
+            <p
+              *ngIf="formSubmitted && getCategory.hasError('required')"
+              style="color:rgba(255, 0, 0, 0.671)"
+            >
+              <font size="2"> * Select Album</font>
+            </p>
+          </div>
+          <!-- <div class="row">
+            <div class="col-md-12" *ngIf="getAlbum.value === 'New'">
+              <ejs-textbox
+                formControlName="newAlbum"
+                placeholder="Album Title"
+                floatLabelType="Auto"
+              >
+              </ejs-textbox>
+              <button
+                type="button"
+                ejs-button
+                cssClass="e-primary"
+                (click)="createNewAlbum()"
+              >
+                ADD
+              </button>
+            </div>
+          </div> -->
+          <!-- <div *ngIf="getnewAlbum.errors">
+            <p
+              *ngIf="
+                formSubmitted &&
+                getnewAlbum.hasError('required') &&
+                getAlbum.value === 'New'
+              "
+              style="color:rgba(255, 0, 0, 0.671)"
+            >
+              <font size="2"> * Album title is required</font>
+            </p>
+          </div> -->
+          <br />
+
+          <ejs-checkbox
+            label="Make Media Featured (Shown On Front Page Slider If & Only If its Image)"
+            formControlName="featured"
+          ></ejs-checkbox>
+          <br />
+
+          <button ejs-button cssClass="e-success" *ngIf="hideCreateButton">
+            Create
+          </button>
+          <button ejs-button cssClass="e-success" *ngIf="hideSaveChangesButton">
+            Save Changes
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

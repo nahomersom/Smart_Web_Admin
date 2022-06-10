@@ -1,0 +1,91 @@
+<div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+            <ejs-tab id="element" class="e-fill">
+              <e-tabitems>
+                <e-tabitem [header]="headerText[0]"> 
+                  <ng-template #content>
+                    <div class="e-card">
+                      <font size="4">{{ !id ? 'Create New Event' : 'Edit Event' }}</font>
+                      <p></p>
+                      <div class="e-card-content">
+                          <ejs-textbox formControlName="title" placeholder="Specify Event Title" floatLabelType="Auto">
+                          </ejs-textbox>
+                          <p *ngIf="formSubmitted && getControls('title').hasError('required')" style="color:rgba(255, 0, 0, 0.671)">
+                              <small>* title is required</small>
+                          </p>
+      
+                          <ejs-textbox [multiline]="true" formControlName="description" rows="5" placeholder="Description" floatLabelType="Auto">
+                          </ejs-textbox>
+                          <p *ngIf="formSubmitted && getControls('description').hasError('required')" style="color:rgba(255, 0, 0, 0.671)">
+                              <small>* Description is required</small>
+                          </p>
+
+                          <ejs-datepicker format="yyyy/MM/dd" formControlName="date" [min]='minDate'></ejs-datepicker>
+                          <p *ngIf="formSubmitted && getControls('date').hasError('required')" style="color:rgba(255, 0, 0, 0.671)">
+                              <small>* Event Date is required</small>
+                          </p>
+
+                          <p></p>
+                          <button ejs-button cssClass="e-success">{{ !id ? 'Create' :  'Save Changes'}}</button>
+                      </div>
+                    </div>
+                  </ng-template>
+                </e-tabitem>
+  
+                <e-tabitem [header]="headerText[1]">
+                  <ng-template #content>                 
+                    <div formArrayName="other">
+                    <div *ngFor="let control of getOthers.controls;let i = index">
+                      <div class="e-card">
+                            <div [formGroupName]="i">
+                                <ejs-dropdownlist [dataSource]="languages" placeholder="language" formControlName="language"></ejs-dropdownlist>
+                                <p *ngIf="formSubmitted && getFormGroup(i).controls['language'].hasError('required')" style="color:rgba(255, 0, 0, 0.671)">
+                                    <small>* select language</small>
+                                </p>
+                                
+                                <ejs-textbox formControlName="title" placeholder="Specify Event Title" floatLabelType="Auto">
+                                </ejs-textbox>
+                                <p *ngIf="formSubmitted && getFormGroup(i).controls['title'].hasError('required')" style="color:rgba(255, 0, 0, 0.671)">
+                                    <small>* title is required</small>
+                                </p>
+    
+                                <ejs-textbox [multiline]="true" formControlName="description" rows="5" placeholder="Description" floatLabelType="Auto">
+                                </ejs-textbox>
+                                <p *ngIf="formSubmitted && getFormGroup(i).controls['description'].hasError('required')" style="color:rgba(255, 0, 0, 0.671)">
+                                    <small>* description is required</small>
+                                </p>
+                            </div>
+                        <p></p>
+                        <div class="removebuttonBox">
+                            <button ejs-button type="button" cssClass="e-danger" (click)="Remove(i,getFormGroup(i).controls['id'].value)">Remove</button>
+                        </div>
+                        
+                      </div>
+                      <br />
+                      <hr />
+                    </div>
+                    </div>
+
+                    <div class="buttonBox">
+                      <button type="button" ejs-button cssClass="e-success" (click)="addOther()" *ngIf="getOthers.length < 3"> Add language</button>
+                    </div>
+
+                    <p align="center" *ngIf="getOthers.length === 3">
+                      <font size="2" color="red">Maximum Language is Reached</font>
+                    </p>
+
+                  </ng-template>
+                </e-tabitem>
+              </e-tabitems>
+            </ejs-tab>
+          </form>
+        </div>
+        <div class="col-2"></div>
+      </div>
+    </div>
+  </div>
+  

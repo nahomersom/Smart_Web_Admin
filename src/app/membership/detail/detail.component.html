@@ -1,0 +1,61 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+        <ejs-tab id="element" class="e-fill">
+          <e-tabitems>
+            <e-tabitem [header]="headerText[0]">
+              <ng-template #content>
+                <p></p>
+                <p align="center" *ngIf=members><img src="{{ membershipService.original_url + members?.photo}}" style="width:175px;height:175px; border-radius: 50%;" class="img-thumbnail" /></p>
+                <p align="center" [ngClass]="{'member_activated' : activated}"><b>{{activationStatus | uppercase}}</b></p>  
+                <p></p>
+                <div class="e-card"  *ngIf=members> 
+                  <p ><b>Company Name : </b><u> {{ members?.fullName | uppercase }} </u></p>
+                </div>
+                <p></p>
+                <div class="e-card" *ngIf=members> 
+                    <p><b>Email : </b>{{ members?.email }}</p>
+                </div>
+                <p></p>
+                <div class="e-card"  *ngIf=members> 
+                    <p><b>Phone Number : </b>{{ members?.phone }}</p>
+                </div>
+                <p></p>
+                <div class="e-card"  *ngIf=members> 
+                    <p><b>Website : </b>{{ members?.Website }}</p>
+                </div>
+                <p></p>
+                <div class="e-card"  *ngIf=members> 
+                    <p><b>Address : </b>{{ members?.Address }}</p>
+                </div>
+                <p></p>
+                <div class="e-card"  *ngIf=members> 
+                    <p><b>Company Contact Person : </b>{{ members?.ContactPersonName }}</p>
+                </div>
+                <p></p>
+                <button ejs-button cssClass="e-success" *ngIf="!activated" (click)="activate()">Activate</button>
+                <button ejs-button cssClass="e-success" *ngIf="activated" (click)="deactivate()">Deactivate</button> 
+              </ng-template>
+            </e-tabitem>
+
+            <e-tabitem [header]="headerText[1]">
+              <ng-template #content>
+                <p></p>
+                  <div *ngFor="let biography of biobraphies">
+                    <div class="e-card"> 
+                        <p>{{ biography.Biography }}</p>
+                    </div>
+                    <hr />
+                    <p></p>
+                  </div>
+              </ng-template>
+            </e-tabitem>
+            
+          </e-tabitems>
+        </ejs-tab>
+     
+      <div class="col-md-3"></div>
+    </div>
+  </div>
+</div>

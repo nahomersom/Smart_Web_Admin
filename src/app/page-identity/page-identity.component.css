@@ -1,0 +1,9 @@
+.title {
+  float: left;
+  margin-left: 30px;
+  font-size: 18px;
+  color: gray !important;
+  float: right;
+  margin-right: 15px !important;
+  font-weight: bolder !important;
+}

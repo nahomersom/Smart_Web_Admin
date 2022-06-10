@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <div class="e-card">
+                <font size='3'>Type Verification Code</font>
+                <form [formGroup]="formgroup" (ngSubmit)="checkCode()">                           
+                    <ejs-maskedtextbox mask='0-0-0-0' formControlName="code" placeholder="Enter Code Here" floatLabelType="Auto">                          
+                    </ejs-maskedtextbox>                  
+                    <div *ngIf="getcode.errors && formSubmitted">
+                        <p *ngIf="getcode.hasError('required')" style="color:rgba(255, 0, 0, 0.521)">* Code is required</p>
+                    </div>
+                    <button ejs-button cssClass="e-success">Verifay</button>
+                    <div *ngIf="invalidCode" class="message">
+                        <p  style="color:rgba(255, 0, 0, 0.521)">* Code is Not Correct</p>
+                    </div>
+                </form>
+           </div> 
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>

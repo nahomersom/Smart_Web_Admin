@@ -1,0 +1,20 @@
+<!-- <div>
+  <span *ngFor="let breadcrumb of breadcrumbs; let last = last">
+    <small>
+      <a [routerLink]="breadcrumb.url">{{ breadcrumb.label }}</a></small
+    >
+    <span *ngIf="!last"><small> > </small></span>
+  </span>
+</div> -->
+
+<!-- <span *ngFor="let breadcrumb of breadcrumbs">
+  <a
+    [routerLink]="[breadcrumb.url, breadcrumb.params]"
+    routerLinkActive="active"
+    >{{ breadcrumb.label | titlecase }}</a
+  >
+</span> -->
+
+<span>
+  {{ breadcrumbs | titlecase }}
+</span>

@@ -1,0 +1,78 @@
+.not-invalid {
+  border: 2px solid rgba(255, 0, 0, 0.692);
+}
+
+.e-card {
+  padding: 3%;
+}
+
+
+.e-background {
+  padding-top: 3%;
+  align-items: flex-end;
+}
+
+.buttonBox {
+  padding-top: 1%;
+}
+
+.e-custom {
+  border-radius: 0;
+  height: 30px;
+  width: 80px;
+}
+
+.e-round {
+  background-color: red;
+}
+
+.e-plus-icon::before {
+  content: '\e825';
+  color: white;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin-top: 12%;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: antiquewhite
+}
+
+.e-control.e-btn.e-lib.e-success {
+  width: 150px;
+  background: #0378d5;
+}
+
+#add-language {
+  background: #0378d5;
+  width: auto !important;
+}
+
+.e-btn-icon.e-icons.e-plus-icon {
+  margin-top: -10px;
+  font-size: 25px;
+}
+
+.e-control.e-btn.e-lib.e-round.e-icon-btn {
+  background: #e3165b;
+  margin-top: -30px;
+  margin-left: 30px;
+}
+
+.e-btn-icon.fas.fa-times {
+  color: #fff;
+  margin-top: -30px;
+  font-size: 35px;
+}
+
+.e-tab.e-fill .e-tab-header .e-toolbar-item.e-active .e-tab-wrap {
+  background: #0378d5;
+}
+
+.e-tab.e-fill .e-tab-header {
+  border-bottom: 2px Solid #0378d5;
+}

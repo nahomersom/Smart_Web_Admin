@@ -1,0 +1,75 @@
+<div class="main">
+  <div class="sidebar-content">
+    <ejs-sidebar
+      id="default-sidebar"
+      #sidebar
+      [type]="type"
+      [target]="target"
+      (created)="onCreated($event)"
+    >
+      <div class="sidebar-header">
+        Smart CMS
+      </div>
+      <div class="sidebar-main">
+        <div class="img-circle">
+          <img
+            class="img img-circle"
+            src="assets/images/logo.jpeg"
+            style="width:144px;height:139px;"
+          />
+        </div>
+        <div class="title">Welcome,</div>
+        <div class="title"><span id="actorFullName"></span></div>
+        <hr />       
+        <div id="sample">
+          <ejs-listview
+            id="List"
+            [dataSource]="data"
+            cssClass="e-list-template"
+            sortOrder="Ascending"
+          >
+            <ng-template #template let-data="">
+              <div class="e-list-wrapper" (click)="navigate(data.url)">
+                <span class="icons">
+                  <i class="{{ data.icon }}"></i>
+                </span>               
+                <span class="e-list-item-header">{{ data.text }}</span>
+              </div>
+            </ng-template>
+          </ejs-listview>
+        </div>
+      </div>
+    </ejs-sidebar>
+  </div>
+
+  <div class="content">
+    <div>
+      <div id="head">
+        <button
+          ejs-button
+          id="toggle"
+          #togglebtn
+          cssClass="e-flat"
+          iconCss="e-icons burg-icon"
+          isToggle="true"
+          (click)="btnClick()"
+        ></button>
+        <button
+          [items]="items"
+          id="account-dropdown"
+          ejs-dropdownbutton
+          content="{{ actorFullName | titlecase }}"
+          iconCss="fas fa-user"
+          (select)="select($event)"
+        ></button>
+      </div>
+      <div class="content-head">
+        <app-page-identity></app-page-identity>
+      </div>
+      <div id="maincontent">
+        <p></p>
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>

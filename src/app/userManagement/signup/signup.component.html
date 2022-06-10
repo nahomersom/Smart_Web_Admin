@@ -1,0 +1,54 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+  
+        </div>
+        <div class="col-md-6">
+            <div class = "e-card"> 
+                    <font size="4" *ngIf="hideCreateButton">Create New Actor</font>
+                    <font size="4" *ngIf="!hideCreateButton">Edit Actor</font>
+                    <p></p>
+                    <form [formGroup]="formgroup" (ngSubmit)="onSubmit()">
+                              <ejs-textbox formControlName="fullName" placeholder="Full Name" floatLabelType="Auto">
+                              </ejs-textbox>                            
+                              <div *ngIf="getfullname.errors">
+                                  <p *ngIf="formSubmitted && getfullname.hasError('required')" style="color:rgba(255, 0, 0, 0.671)"><font size="2">Full Name is required</font></p>
+                              </div>                             
+                              <ejs-textbox type="email" formControlName="email" placeholder="Email" floatLabelType="Auto">
+                              </ejs-textbox>                            
+                              <div *ngIf="getemail.errors">
+                                  <p *ngIf="formSubmitted && getemail.hasError('required')" style="color:rgba(255, 0, 0, 0.671)"><font size="2">Email is required</font></p>
+                                  <p *ngIf="formSubmitted && getemail.hasError('email')" style="color:rgba(255, 0, 0, 0.671)"><font size="2">invalid email</font></p>
+                              </div>
+                              <div *ngIf="emailAlreadyUsed">
+                                <p *ngIf="" style="color:rgba(255, 0, 0, 0.671)"><font size="2">Email Address Is Used By Other Account</font></p>
+                              </div>                             
+                              <ejs-textbox type="password" formControlName="password" placeholder="Password" floatLabelType="Auto">
+                              </ejs-textbox>                           
+                              <div *ngIf="getpassword.errors">
+                                  <p *ngIf="formSubmitted && getpassword.hasError('required')" style="color:rgba(255, 0, 0, 0.671)"><font size="2">Password is required</font></p>
+                                  <p *ngIf="formSubmitted && getpassword.hasError('minlength')" style="color:rgba(255, 0, 0, 0.671)"><font size="2">Password Should be atleast 5 character</font></p>
+                                  <p *ngIf="formSubmitted && getpassword.hasError('maxlength')" style="color:rgba(255, 0, 0, 0.671)"><font size="2">Password Should be no more than 8 character</font></p>
+                              </div>                             
+                              <ejs-textbox type="password" formControlName="repassword" placeholder="Confirm Password" floatLabelType="Auto">
+                              </ejs-textbox>  
+                              <div *ngIf="getrepassword.errors">
+                                  <p *ngIf="formSubmitted && getrepassword.hasError('required')" style="color:rgba(255, 0, 0, 0.671)"><font size="2">Confirm Password</font></p>
+                              </div>
+                              <div *ngIf="formSubmitted && passwordMatchFail">
+                                    <p style="color:rgba(255, 0, 0, 0.671)"><font size="2">Password not Match</font></p>
+                              </div>
+                              <p></p>
+                                <ejs-checkbox label=" Make This Account Enabled " formControlName="status"></ejs-checkbox>
+                              <p></p>
+                              <button ejs-button cssClass="e-success" *ngIf="hideCreateButton">Create</button>
+                              <button ejs-button cssClass="e-success" *ngIf="hideSaveChangesButton">Save Changes</button>
+                    </form>
+               
+            </div>
+        </div>
+        </div>
+        <div class="col-md-3">
+        </div>
+    </div>

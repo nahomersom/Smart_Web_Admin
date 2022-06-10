@@ -1,0 +1,28 @@
+.not-invalid {
+  border: 2px solid rgba(255, 0, 0, 0.692);
+}
+
+.e-card {
+  padding: 3%;
+}
+
+.e-background {
+  padding-top: 3%;
+  align-items: flex-end;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin-top: 12%;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: antiquewhite
+}
+
+.e-control.e-btn.e-lib.e-success {
+  width: 150px;
+  background: #0378d5;
+}
